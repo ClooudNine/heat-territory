@@ -1,0 +1,142 @@
+#space_insulation {
+    position: relative;
+    display: grid;
+    width: 90%;
+    height: 90vh;
+    background: url("/images/space-bg.png") left no-repeat;
+    background-size: auto 100%;
+    margin-top: -10%;
+    z-index: -1;
+    grid-template-rows: 30% 12% 38% 20%;
+    grid-template-columns: 15% 23% 40% auto;
+    gap: 2% 0;
+}
+
+#space_caption {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    font-family: 'Intro', sans-serif;
+    font-size: 4vmin;
+    color: #FFFFFF;
+}
+
+#space_description {
+    grid-row: 3/3;
+    grid-column: 2/2;
+    background: rgba(6, 22, 65, 0.2);
+    backdrop-filter: blur(3px);
+    border-radius: 2vmin;
+    padding: 5% 0 0 3%;
+}
+
+#space_description p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vmin;
+    color: #FFFFFF;
+    text-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
+}
+
+#differences {
+    grid-row: 3/3;
+    grid-column: 3/3;
+    border-radius: 2vmin;
+    height: 120%;
+    width: auto;
+    margin-left: 35%;
+    margin-top: -5%;
+}
+
+#calculate_price {
+    position: relative;
+    height: 50%;
+    grid-row: 4/4;
+    grid-column: 2/2;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 0 #E0A829, 3px 4px 10px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2vmin;
+    color: #531E00;
+    text-shadow: 0 0 4px #FFFBEE;
+}
+
+#calculate_price img {
+    position: absolute;
+    height: 170%;
+    width: auto;
+    bottom: -20px;
+    left: -25px;
+}
+
+#left_space_cloud {
+    grid-column: 1/-1;
+    grid-row: 5/5;
+    margin-top: -8%;
+    margin-left: -5%;
+    transform: scaleX(-1);
+}
+
+#right_space_cloud {
+    grid-column: 3/3;
+    grid-row: 5/5;
+    margin-top: -30%;
+    margin-left: 50%;
+}
+
+@media screen and (max-device-width: 480px) {
+    #space_insulation {
+        /* background: url("/images/about-bg-mobile.jpg") center top no-repeat, linear-gradient(180deg, rgba(4, 0, 213, 0) 22.67%, rgba(90, 98, 229, 0.427515) 38.67%, rgba(156, 175, 243, 0.95) 70.04%, #CCE6FC 92.01%); */
+        background-size: 200%;
+        margin-top: unset;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 20% auto;
+        gap: 4% 0;
+    }
+
+    #space_caption {
+        grid-row: 2/2;
+        grid-column: unset;
+        font-size: 7vmin;
+        text-align: center;
+    }
+
+    #space_description {
+        grid-row: 4/4;
+        grid-column: unset;
+        padding: 5% 0 0 3%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #space_description p {
+        font-size: 3.5vmin;
+        gap: unset;
+    }
+
+    #differences {
+        grid-row: 3/3;
+        grid-column: unset;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #left_space_cloud {
+        display: none;
+    }
+
+    #right_space_cloud {
+        position: relative;
+        z-index: -1;
+        grid-column: unset;
+        grid-row: 5/5;
+        margin-left: unset;
+        transform: scale(2);
+    }
+
+    #calculate_price {
+        display: none;
+    }
+}

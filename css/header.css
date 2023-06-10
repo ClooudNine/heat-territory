@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+#header__logo {
+    width: 45%;
+    padding-right: 5vmin;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3%;
+    align-items: center;
+    background: white;
+}
+
+#header__logo img {
+    height: auto;
+    width: 40%;
+}
+
+#header__logo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+#header__contacts {
+    background: #61B4FF;
+    gap: 7%;
+    width: 60%;
+    height: 80%;
+    display: flex;
+}
+
+#contacts__call {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55%;
+    gap: 4%;
+}
+
+#contacts__call button {
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: none;
+    border-radius: 50%;
+}
+
+#contacts__call button img {
+    width: 100%;
+    height: auto;
+}
+
+#contacts__num {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#contacts__hours {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+#contacts__callback {
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 50%;
+    width: 55%;
+    box-shadow: 0 0 13px rgba(255, 190, 22, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2vmin;
+    color: #531E00;
+    border-radius: 2vmin;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        height: 30%;
+    }
+
+    #logo {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        padding-right: 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    #num {
+        font-size: 4vmin;
+    }
+
+    #working_hours {
+        font-size: 2.5vmin;
+    }
+
+    #logo p {
+        text-align: center;
+        font-size: 3vmin;
+    }
+
+    #logo img {
+        height: 50%;
+    }
+
+    #contacts {
+        width: 100%;
+        height: 50%;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    #phone_number {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    #phone_number button {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    #phone_number button img {
+        width: 55%;
+    }
+
+    #call_me_back {
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+    }
+
+    #call_me_back button {
+        height: 65%;
+        width: 40%;
+        font-size: 3.5vmin;
+    }
+}

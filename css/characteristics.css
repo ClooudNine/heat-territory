@@ -1,0 +1,60 @@
+#guarantees {
+    height: 65vh;
+    width: 85%;
+    display: grid;
+    margin: 3% 0 0 15%;
+    padding: 0 15% 0 5%;
+    gap: 0 20px;
+    grid-auto-flow: column;
+    background: #EAF5FF;
+}
+
+#guarantees div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5% 0;
+    padding: 5%;
+}
+
+
+.caption_warranty {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2vmin;
+    text-align: center;
+    color: #000000;
+}
+
+.description_warranty {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7vmin;
+    color: #000000;
+}
+
+@media screen and (max-device-width: 480px) {
+    #guarantees {
+        height: auto;
+        width: 85%;
+        display: grid;
+        margin: 10% auto 0 auto;
+        padding: 0;
+        gap: 5% 0;
+        grid-auto-flow: row;
+        background: none;
+    }
+
+    #guarantees div {
+        background: #EAF5FF;
+        gap: 5% 0;
+    }
+
+    .caption_warranty {
+        font-size: 5vmin;
+    }
+
+    .description_warranty {
+        font-size: 3vmin;
+    }
+}

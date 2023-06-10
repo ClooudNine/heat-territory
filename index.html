@@ -2,44 +2,143 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Владислав Сырель">
+    <meta name="description" content="Сайт компании 'Территория тепла'. Утепление напялемым ППУ.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/characteristics.css">
+    <link rel="stylesheet" href="./css/space_insulation.css">
+    <link rel="stylesheet" href="./css/price.css">
     <title>Территория тепла</title>
 </head>
 <body>
 <header class="header">
-    <div id="logo">
-        <img src="images/header_logo.png" alt="Логотип 'Территоия тепла'">
+    <div id="header__logo">
+        <img src="/images/header_logo.png" alt="Логотип 'Территория тепла'">
         <p>Знаем всё про утепление <br> пенополиуретаном</p>
     </div>
-    <div id="contacts">
-        <div id="phone_number">
+    <div id="header__contacts">
+        <div id="contacts__call">
             <button>
-                <img src="images/phone.svg" alt="Номер телефона">
+                <img src="/images/phone.svg" alt="Номер телефона">
             </button>
             <div>
-                <p id="num">+7(499)40-40-747</p>
-                <p id="working_hours">Мы на связи: 8:00 - 18:00</p>
+                <p id="contacts__num">+7(499)40-40-747</p>
+                <p id="contacts__hours">Мы на связи: 8:00 - 18:00</p>
             </div>
         </div>
-        <div id="call_me_back">
-            <button >Перезвоните мне <img src="images/pointer.png" alt="Указатель"></button>
-        </div>
+        <button id="contacts__callback">Перезвоните мне</button>
     </div>
 </header>
 <section id="main_info">
-    <h1>УТЕПЛЯЕМ <br> НАПЫЛЯЕМЫМ <br> ППУ <span>C ГАРАНТИЕЙ 30 ЛЕТ</span></h1>
-    <div id="">
+    <img id="main_cloud" src="/images/main_cloud.png" alt="Облако">
+    <h1>УТЕПЛЯЕМ <br> НАПЫЛЯЕМЫМ <br> ППУ <small>С ГАРАНТИЕЙ 30 ЛЕТ</small></h1>
+    <img id="mobile_bg" src="/images/mobile_main_bg.png" alt="Мобильные обои">
+    <div id="features">
         <div id="without_prepayment">
-            <img src="images/without_prepayment.png" alt="Оплата по факту выполнения">
+            <img src="/images/without_prepayment.png" alt="Оплата по факту выполнения">
             <p>Оплата по факту выполнения</p>
         </div>
-        <div>
-            <img src="images/payment.png" alt="Вернём деньги">
-            <p>Снизим платежи за отопление на 40% или вернём деньги</p>
+        <div id="money_back">
+            <img src="/images/payment.png" alt="Вернём деньги">
+            <p>Снизим платежи за отопление на 40% или <b>вернём деньги</b></p>
         </div>
     </div>
-    <div></div>
-    <button></button>
+    <div id="main_description">
+        <p>Получите <b>бесплатное</b> теплотехническое <br> обследование</p>
+        <p>После обследования Вы будете точно знать, как добиться <br>
+            максимального снижения теплопотерь за наименьший бюджет</p>
+    </div>
+    <div id="scroll_and_inspection">
+        <button id="get_inspection">
+            <img src="/images/men_with_thermal_imager.png" alt="Мужчина с тепловизором">
+            Получить обследование
+        </button>
+        <img id="scroll" src="/images/scroll.png" alt="Листай">
+    </div>
+</section>
+<section id="guarantees">
+    <div>
+        <img src="/images/warranty.png" alt="Гарантия 30 лет, но мы страхуемся">
+        <p class="caption_warranty">Гарантия 30 лет,<br> но мы страхуемся</p>
+        <p class="description_warranty">Чтобы всё было честно, уже этой зимой проведем обследование тепловизором,
+            и <b> устраним все недостатки </b> мосты холода <b> за свой счёт. </b>
+            Реальный срок эксплуатации ППУ более 70 лет (может и больше).
+            Ведь он не разлагается и не крошится - вообще. </p>
+    </div>
+    <div>
+        <img src="/images/best_materials.png" alt="Лучшие материалы - гарантия экологичности">
+        <p class="caption_warranty">Лучшие материалы - <br> гарантия экологичности</p>
+        <p class="description_warranty">Используем только материалы <b> проверенные временем компоненты </b> ППУ.
+            Lallafom, BASF, Huntsman, Ecotermix Premium.
+            Вы можете быть абсолютно спокойны в отношении экологичности материала.
+            ППУ - пожалуй самый экологичный материал. </p>
+    </div>
+    <div>
+        <img src="/images/compensation.png" alt="Полная компенсация финансовых издержек">
+        <p class="caption_warranty">Полная компенсация <br> финансовых издержек</p>
+        <p class="description_warranty">Все гарантируют замену утеплителя в случае ошибки, но забывают про стоимость уже сделанного ремонта.
+            Мы же <b> берем на себя полные обязательства </b> по устранению недостатков, включая ремонт интерьера.
+            Настолько мы уверенны в качестве!</p>
+    </div>
+</section>
+<section id="space_insulation">
+    <h1 id="space_caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h1>
+    <div id="space_description">
+        <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в космической промышленности.
+            В частности, Советский космический корабль многоразового использования Буран был утеплен ППУ. </p>
+        <br>
+        <p>Минимальный слой - максимальная энергоэффективность.</p>
+        <br>
+        <p>ППУ– это негорючий и самый энергоэффективный утеплитель в мире. </p>
+        <p>8 см ППУ — 190 см кирпича! И это не шутка. <br>5 см ППУ — 15 см СУХОЙ минваты без стыков с деревом. </p>
+    </div>
+    <img id="differences" src="/images/blocks_stat.png" alt="Различия крипичей и ППУ">
+    <button id="calculate_price"><img src="/images/calculator.png" alt="Калькулятор"> Рассчитать цену утепеления</button>
+    <img id="left_space_cloud" src="/images/lefts-space-cloud.png" alt="Левое облако">
+    <img id="right_space_cloud" src="/images/right-space-cloud.png" alt="Правое облако">
+</section>
+<section id="price">
+    <h1><img src="/images/bookmark.png" alt="Цены на работы">Цены на работы</h1>
+    <p>Точные цены только после детального теплотехнического обследования</p>
+    <div id="types_of_work">
+        <div>
+            <img src="/images/breathable_ppu.png" alt="Дышащий ППУ (шумоизолятор)">
+            <p>Дышащий ППУ <br> (шумоизолятор)</p>
+            <p>Идеален для утепления кровли и пористых стен.
+                Дышащий материал. Обладает отличными звукоизоляционными характеристиками.
+                Требует установки пароизоляционных мембран. </p>
+            <div>
+                <button>Подробнее</button>
+                <p>400 р./м2 - 1200 р./м2</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/rigid_ppu.png" alt="Жёсткий ППУ (самый тёплый)">
+            <p>Жёсткий ППУ <br> (самый тёплый)</p>
+            <p>Не требует установки дополнительных мембран, ложится ровным слоем.
+                Идеален для цоколей, стен, фундаментов. Часто применяется при внутренней теплоизоляции.
+                Возможно использовать под стяжкой.</p>
+            <div>
+                <button>Подробнее</button>
+                <p>600 р./м2 - 1400 р./м2</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/interstitial_voids.png" alt="Заливка ППУ в межственовые пустоты">
+            <p>Заливка ППУ <br> в межстеновые пустоты</p>
+            <p>Идеален для утепления кровли и пористых стен.
+                Дышащий материал. Обладает отличными звукоизоляционными характеристиками.
+                Требует установки пароизоляционных мембран. </p>
+            <div>
+                <button>Подробнее</button>
+                <p>400 р./м2 - 1200 р./м2</p>
+            </div>
+        </div>
+    </div>
 </section>
 </body>
 </html>
