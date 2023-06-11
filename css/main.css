@@ -1,112 +1,103 @@
-#main_info {
+#main {
     margin-top: -35px;
-    height: 100vh;
-    width: 100%;
+    max-width: 100%;
     display: grid;
-    grid-template-columns: 15% auto;
-    grid-template-rows: 10% auto;
-    gap: 4% 0;
+    grid-template-columns: 35vh auto;
+    grid-template-rows: 4vw 10vw 7vw 10vw;
     background: url('/images/main_composition.png') no-repeat right, linear-gradient(to bottom, #7dc1ff, #CCE6FC);
 }
 
-#main_cloud {
-    grid-row: 4/6;
-    margin-top: -70px;
-}
-
-#mobile_bg {
-    display: none;
-}
-
-#main_info h1 {
+#main h1 {
     grid-row: 2/2;
-    grid-column: 2/3;
+    grid-column: 2/2;
+    place-self: center left;
+    margin: 0;
     font-family: 'Intro', sans-serif;
-    font-size: 6.5vmin;
-    line-height: 100%;
+    font-size: 2.5vmax;
+    line-height: 1;
     color: #FFFFFF;
     text-shadow: 1px 0 0 #87C6FF, -1px 0 0 #87C6FF, 0 -1px 0 #87C6FF, 0 1px 0 #87C6FF, 0 4px 37px rgba(52, 123, 188, 0.5);
 }
 
-#main_info h1 small {
+#main h1 small {
     position: relative;
     display: inline-block;
-    box-sizing: border-box;
-    line-height: 1.5;
+    top: -8px;
     height: 45px;
-    top: -5px;
+    line-height: 2;
     font-family: 'Intro', sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 3.2vmin;
+    padding: 0 10px;
+    font-size: 1.2vmax;
     background: #090E01;
     border: 1px solid rgba(255, 255, 255, 0.29);
     box-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
-    border-radius: 1.5vmin;
+    border-radius: 1vmin;
     text-shadow: none;
 }
 
-#features {
+#main__features {
     grid-column: 2/2;
     grid-row: 3/3;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 3%;
 }
 
-#without_prepayment {
+#features__without_prepayment p, #features__money_back p {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+#features__without_prepayment {
     display: flex;
     align-items: center;
-    width: 15%;
-    height: 90%;
+    width: 20%;
+    height: 55%;
     background: rgba(253, 253, 253, 0.2);
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(5px);
     border-radius: 10px;
 }
 
-#without_prepayment img {
+#features__without_prepayment img {
     position: absolute;
-    width: 65%;
-    height: auto;
-    right: 65%;
+    width: auto;
+    height: 120%;
+    right: 67%;
     transform: rotate(-7.08deg);
 }
 
-#without_prepayment p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vmin;
-    color: #000000;
+#features__without_prepayment p {
+    font-size: 1.7vmin;
     margin-left: 30%;
 }
 
-#money_back {
+#features__money_back {
     display: flex;
     align-items: center;
-    width: 16%;
-    height: 90%;
+    width: 20%;
+    height: 55%;
     background: rgba(253, 253, 253, 0.2);
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(5px);
     border-radius: 10px;
 }
 
-#money_back p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.95vmin;
-    color: #000000;
+#features__money_back p {
+    font-size: 1.7vmin;
     margin-left: 35%;
 }
 
-#money_back img {
+#features__money_back img {
     position: absolute;
-    width: 35%;
+    width: 30%;
     right: 70%;
     height: auto;
     transform: rotate(12.93deg);
 }
 
-#main_description {
+#main__description {
     grid-row: 4/4;
     grid-column: 2/2;
     display: flex;
@@ -115,26 +106,30 @@
     gap: 12% 0;
 }
 
-#main_description p:first-child {
+#main__description p:first-child, #main__description p:last-child {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5vmin;
+    margin: 0;
     color: #000000;
 }
 
-#main_description p:last-child {
+#main__description p:first-child {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.7vmin;
-    color: #000000;
+    font-size: 2vmin;
 }
 
-#scroll_and_inspection {
+#main__description p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4vmin;
+}
+
+#main__scroll_and_inspection {
     grid-row: 5/5;
     grid-column: 2/2;
     display: flex;
     gap: 7%;
 }
 
-#get_inspection {
+#inspection__get {
     position: relative;
     width: 32%;
     height: 40%;
@@ -148,12 +143,20 @@
     color: #531E00;
 }
 
-#get_inspection img:first-child {
+#inspection__get img:first-child {
     position: absolute;
     width: 20%;
     height: auto;
     left: 3%;
     bottom: 0;
+}
+
+#main__cloud {
+    grid-row: 4/4;
+}
+
+#main__mobile {
+    display: none;
 }
 
 @media screen and (max-device-width: 480px) {

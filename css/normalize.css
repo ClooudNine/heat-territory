@@ -32,6 +32,11 @@ html {
 
 body {
     margin: 0;
+    background: #CCE6FC;
+}
+
+p {
+    margin: 0;
 }
 
 /**

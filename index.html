@@ -12,19 +12,20 @@
     <link rel="stylesheet" href="./css/characteristics.css">
     <link rel="stylesheet" href="./css/space_insulation.css">
     <link rel="stylesheet" href="./css/price.css">
+    <link rel="stylesheet" href="./css/insulated_objects.css">
+    <link rel="stylesheet" href="./css/phone_form.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Территория тепла</title>
 </head>
 <body>
 <header class="header">
     <div id="header__logo">
-        <img src="/images/header_logo.png" alt="Логотип 'Территория тепла'">
+        <img src="./images/header_logo.png" alt="Логотип 'Территория тепла'">
         <p>Знаем всё про утепление <br> пенополиуретаном</p>
     </div>
     <div id="header__contacts">
         <div id="contacts__call">
-            <button>
-                <img src="/images/phone.svg" alt="Номер телефона">
-            </button>
+            <button><img src="./images/phone.svg" alt="Номер телефона"></button>
             <div>
                 <p id="contacts__num">+7(499)40-40-747</p>
                 <p id="contacts__hours">Мы на связи: 8:00 - 18:00</p>
@@ -33,34 +34,35 @@
         <button id="contacts__callback">Перезвоните мне</button>
     </div>
 </header>
-<section id="main_info">
-    <img id="main_cloud" src="/images/main_cloud.png" alt="Облако">
+<main id="main">
+    <img id="main__cloud" src="./images/main_cloud.png" alt="Облако">
     <h1>УТЕПЛЯЕМ <br> НАПЫЛЯЕМЫМ <br> ППУ <small>С ГАРАНТИЕЙ 30 ЛЕТ</small></h1>
-    <img id="mobile_bg" src="/images/mobile_main_bg.png" alt="Мобильные обои">
-    <div id="features">
-        <div id="without_prepayment">
-            <img src="/images/without_prepayment.png" alt="Оплата по факту выполнения">
+    <img id="main__mobile" src="./images/mobile_main_bg.png" alt="Мобильные обои">
+    <div id="main__features">
+        <div id="features__without_prepayment">
+            <img src="./images/without_prepayment.png" alt="Оплата по факту выполнения">
             <p>Оплата по факту выполнения</p>
         </div>
-        <div id="money_back">
-            <img src="/images/payment.png" alt="Вернём деньги">
+        <div id="features__money_back">
+            <img src="./images/payment.png" alt="Вернём деньги">
             <p>Снизим платежи за отопление на 40% или <b>вернём деньги</b></p>
         </div>
     </div>
-    <div id="main_description">
+    <div id="main__description">
         <p>Получите <b>бесплатное</b> теплотехническое <br> обследование</p>
         <p>После обследования Вы будете точно знать, как добиться <br>
             максимального снижения теплопотерь за наименьший бюджет</p>
     </div>
-    <div id="scroll_and_inspection">
-        <button id="get_inspection">
+    <div id="main__scroll_and_inspection">
+        <button id="inspection__get">
             <img src="/images/men_with_thermal_imager.png" alt="Мужчина с тепловизором">
             Получить обследование
         </button>
-        <img id="scroll" src="/images/scroll.png" alt="Листай">
+        <img id="main__scroll" src="/images/scroll.png" alt="Листай">
     </div>
-</section>
+</main>
 <section id="guarantees">
+    <div id="guarantees__container">
     <div>
         <img src="/images/warranty.png" alt="Гарантия 30 лет, но мы страхуемся">
         <p class="caption_warranty">Гарантия 30 лет,<br> но мы страхуемся</p>
@@ -84,6 +86,7 @@
             Мы же <b> берем на себя полные обязательства </b> по устранению недостатков, включая ремонт интерьера.
             Настолько мы уверенны в качестве!</p>
     </div>
+    </div>
 </section>
 <section id="space_insulation">
     <h1 id="space_caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h1>
@@ -102,43 +105,123 @@
     <img id="right_space_cloud" src="/images/right-space-cloud.png" alt="Правое облако">
 </section>
 <section id="price">
-    <h1><img src="/images/bookmark.png" alt="Цены на работы">Цены на работы</h1>
-    <p>Точные цены только после детального теплотехнического обследования</p>
-    <div id="types_of_work">
-        <div>
-            <img src="/images/breathable_ppu.png" alt="Дышащий ППУ (шумоизолятор)">
-            <p>Дышащий ППУ <br> (шумоизолятор)</p>
-            <p>Идеален для утепления кровли и пористых стен.
+    <h2 id="price__caption"><img src="./images/bookmark.png" alt="Цены на работы">Цены на работы</h2>
+    <p id="price__description">Точные цены только после детального теплотехнического обследования</p>
+    <div id="price__types">
+        <div class="price__types-item">
+            <img src="./images/breathable_ppu.png" alt="Дышащий ППУ (шумоизолятор)">
+            <p class="types-item__caption">Дышащий ППУ <br> (шумоизолятор)</p>
+            <p class="types-item__description">Идеален для утепления кровли и пористых стен.
                 Дышащий материал. Обладает отличными звукоизоляционными характеристиками.
                 Требует установки пароизоляционных мембран. </p>
-            <div>
-                <button>Подробнее</button>
+            <div class="types-item__cost">
+                <button>Подробнее <img src="./images/arrow.png" alt="Стрелка вправо"></button>
                 <p>400 р./м2 - 1200 р./м2</p>
             </div>
         </div>
-        <div>
-            <img src="/images/rigid_ppu.png" alt="Жёсткий ППУ (самый тёплый)">
-            <p>Жёсткий ППУ <br> (самый тёплый)</p>
-            <p>Не требует установки дополнительных мембран, ложится ровным слоем.
+        <div class="price__types-item">
+            <img src="./images/rigid_ppu.png" alt="Жёсткий ППУ (самый тёплый)">
+            <p class="types-item__caption">Жёсткий ППУ <br> (самый тёплый)</p>
+            <p class="types-item__description">Не требует установки дополнительных мембран, ложится ровным слоем.
                 Идеален для цоколей, стен, фундаментов. Часто применяется при внутренней теплоизоляции.
                 Возможно использовать под стяжкой.</p>
-            <div>
-                <button>Подробнее</button>
+            <div class="types-item__cost">
+                <button>Подробнее <img src="./images/arrow.png" alt="Стрелка вправо"></button>
                 <p>600 р./м2 - 1400 р./м2</p>
             </div>
         </div>
-        <div>
-            <img src="/images/interstitial_voids.png" alt="Заливка ППУ в межственовые пустоты">
-            <p>Заливка ППУ <br> в межстеновые пустоты</p>
-            <p>Идеален для утепления кровли и пористых стен.
+        <div class="price__types-item">
+            <img src="./images/interstitial_voids.png" alt="Заливка ППУ в межственовые пустоты">
+            <p class="types-item__caption">Заливка ППУ <br> в межстеновые пустоты</p>
+            <p class="types-item__description">Идеален для утепления кровли и пористых стен.
                 Дышащий материал. Обладает отличными звукоизоляционными характеристиками.
                 Требует установки пароизоляционных мембран. </p>
-            <div>
-                <button>Подробнее</button>
+            <div class="types-item__cost">
+                <button>Подробнее <img src="./images/arrow.png" alt="Стрелка вправо"></button>
                 <p>400 р./м2 - 1200 р./м2</p>
             </div>
         </div>
     </div>
 </section>
+<section id="insulated_objects">
+    <h2 id="insulated_objects__caption"><img src="./images/heart.png" alt="Сердце">УТЕПЛЯЕМ&nbsp;<span>ЛЮБЫЕ</span>&nbsp;ОБЪЕКТЫ</h2>
+    <div id="insulated_objects__container">
+        <div class="insulated_objects__container-item">
+            <img src="./images/private_category.png" alt="Частные">
+            <div><h3>Частные</h3></div>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+        </div>
+        <div class="insulated_objects__container-item">
+            <img src="./images/industrial_category.png" alt="Промышленные">
+            <div><h3>Промышленные</h3> </div>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+        </div>
+        <div class="insulated_objects__container-item">
+            <img src="./images/other_category.png" alt="Другие">
+            <div><h3>Другие</h3></div>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+        </div>
+    </div>
+</section>
+<section id="phone_form">
+    <div id="phone_form__container">
+        <div id="phone_form__description">
+            <img src="./images/engineer.png" alt="Инженер">
+            <p>Погрузимся в вашу задачу и <b>решим</b> её  <b>комплексно</b>, давайте обсудим в WhatsApp</p>
+            <div><img src="./images/arrow.png" alt="Стрелка вправо"></div>
+        </div>
+        <form id="phone_form__form">
+            <label for="phone">Телефон * <small>Введите телефон для связи</small></label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,14}" required>
+            <button type="submit"><img src="./images/whatsapp.png" alt="Получить консультацию">Получить консультацию</button>
+        </form>
+    </div>
+</section>
+<section id="before_and_after">
+    <h2><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
+    <p>так выглядит утепление мягким ППУ:</p>
+    <div>
+
+    </div>
+    <div></div>
+</section>
+<section>
+
+</section>
+<footer id="footer">
+    <div id="footer__logo">
+        <img src="./images/header_logo.png" alt="Территория тепла">
+        <p>© 2023 "Территория Тепла"</p>
+    </div>
+    <div id="footer__links">
+        <p>Утепление ППУ цена</p>
+        <p>Наши работы</p>
+        <p>Контакты</p>
+        <p>Расчёт стоимости</p>
+    </div>
+    <div id="footer__address">
+        <div>
+            <img src="./images/phone.png" alt="Номер телефона">
+            <div>
+                <p id="footer__address-number">+7(499)40-40-747</p>
+                <p>Мы на связи: 8:00 - 18:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="./images/city.png" alt="Адрес">
+            <div>
+                <p>Адрес:</p>
+                <p id="footer__address-full">Одинцово, ул. Говорова 18А</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer__social">
+        <img src="./images/instagram.png" alt="Instagram">
+        <img src="./images/vk.png" alt="ВКонтакте">
+    </div>
+</footer>
 </body>
 </html>

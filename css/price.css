@@ -1,62 +1,100 @@
 #price {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    display: grid;
+    grid-template-columns: minmax(2%, 14%) 1fr 20vh;
+    grid-template-rows: 5vh auto auto;
 }
 
-#price h1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    font-family: 'Intro', sans-serif;
-    font-size: 36px;
+#price__caption, .types-item__description, .types-item__cost button, .types-item__cost p, #price__description {
     color: #000000;
 }
 
-#price h1 img {
+.types-item__caption, .types-item__description, .types-item__cost button, .types-item__cost p, #price__description {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#price__caption {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    font-family: 'Intro', sans-serif;
+    font-size: 2vw;
+}
+
+#price__caption img {
     height: 100%;
-    width: auto;
     filter: drop-shadow(0px 4px 37px rgba(52, 123, 188, 0.5));
 }
 
-#price p {
+#price__description {
     grid-row: 2/2;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
+    grid-column: 2/2;
+    margin: 20px 0 0 0;
+    font-size: 0.9vw;
 }
 
-#types_of_work {
+#price__types {
     grid-row: 3/3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-column: 2/2;
+    margin: 40px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Отступ между карточками */
 }
 
-#types_of_work div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.price__types-item {
+    display: grid;
+    grid-template-rows: 3fr auto auto 1fr;
     background: #FFFFFF;
     box-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
     border-radius: 10px;
 }
 
-#types_of_work div img {
-    width: 30%;
-    height: auto;
+.price__types-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
     border: 3px solid #FFFFFF;
     filter: drop-shadow(0px 4px 37px rgba(52, 123, 188, 0.5));
     border-radius: 10px;
 }
 
-#types_of_work div p:first-child {
-    font-family: 'Montserrat', sans-serif;
+.types-item__caption {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5vw;
     text-align: center;
-    color: #000000;
+    margin: 20px 0 0 0;
+}
+
+.types-item__description {
+    font-size: 0.9vw;
+    margin: 20px 1px 0 10px;
+    line-height: 1.4;
+}
+
+.types-item__cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.types-item__cost button {
+    display: flex;
+    align-items: center;
+    gap: 0 5%;
+    padding: 0 20px 0 20px;
+    height: 50%;
+    font-size: 1vw;
+    background: radial-gradient(111.22% 111.22% at 40.47% -0.72%, rgba(255, 255, 255, 0.66) 0%, rgba(255, 255, 255, 0) 100%), #61B4FF;
+    box-shadow: 0 4px 2px #0081F7;
+    border-radius: 10px;
+    border: none;
+}
+
+.types-item__cost p {
+    font-size: 0.8vw;
 }
