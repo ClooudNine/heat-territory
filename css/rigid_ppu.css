@@ -1,0 +1,57 @@
+#rigid_ppu {
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #CDE6FC 100%), #87C6FF;
+    border-radius: 5px;
+    display: grid;
+    width: 100%;
+    margin-top: -135px;
+    grid-template-rows: 200px 5vh 30vh 5vh;
+    grid-template-columns: 45vw 40vw 15vw;
+    gap: 5% 0;
+}
+
+#rigid_ppu__carousel {
+    grid-row: 2/-1;
+    grid-column: 1/1;
+}
+
+#rigid_ppu__caption {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    font-family: 'Intro', sans-serif;
+    font-size: 2.5vw;
+    color: #000000;
+}
+
+#rigid_ppu__description {
+    grid-row: 3/3;
+    grid-column: 2/2;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    padding: 20px 30px 20px 30px;
+}
+
+#rigid_ppu__calculate {
+    grid-row: 4/4;
+    grid-column: 2/2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(94.74deg, #FFFFFF 30.83%, rgba(255, 255, 255, 0) 76.02%), #ECECEC;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
+    border-radius: 20px;
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #000000;
+}
+
+#rigid_ppu__calculate img {
+   height: 200%;
+}

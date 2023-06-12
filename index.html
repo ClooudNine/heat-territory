@@ -6,6 +6,8 @@
     <meta name="description" content="Сайт компании 'Территория тепла'. Утепление напялемым ППУ.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./js/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -14,8 +16,16 @@
     <link rel="stylesheet" href="./css/price.css">
     <link rel="stylesheet" href="./css/insulated_objects.css">
     <link rel="stylesheet" href="./css/phone_form.css">
+    <link rel="stylesheet" href="./css/before_and_after.css">
+    <link rel="stylesheet" href="./css/get_fast_calculate.css">
+    <link rel="stylesheet" href="./css/rigid_ppu.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Территория тепла</title>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/before-after-slider.js"></script>
+    <script src="./js/carousel.js"></script>
 </head>
 <body>
 <header class="header">
@@ -181,15 +191,70 @@
     </div>
 </section>
 <section id="before_and_after">
-    <h2><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
-    <p>так выглядит утепление мягким ППУ:</p>
-    <div>
-
+    <h2 id="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
+    <p id="before_and_after__description">так выглядит утепление мягким ППУ:</p>
+    <div id="before_and_after__container">
+        <div class="before_and_after__container-item">
+            <div>до</div>
+            <div class="view view-after">
+                <img src="./images/house_before.png" alt="До"/>
+            </div>
+            <div class="view view-before">
+                <img src="./images/house_after.png" alt="После"/>
+            </div>
+            <div class="dragme"><div class="dr-circle"><img src="./images/drag.png" alt="Перетаскиватель"></div></div>
+            <div>после</div>
+        </div>
+        <div class="before_and_after__container-item">
+            <div>до</div>
+            <div class="view view-after">
+                <img src="./images/house_before.png" alt="До"/>
+            </div>
+            <div class="view view-before">
+                <img src="./images/house_after.png" alt="После"/>
+            </div>
+            <div class="dragme"><div class="dr-circle"><img src="./images/drag.png" alt="Перетаскиватель"></div></div>
+            <div>после</div>
+        </div>
     </div>
-    <div></div>
 </section>
-<section>
-
+<section id="get_fast_calculate">
+    <p id="get_fast_calculate__caption">Узнайте стоиость утепления <br>
+        <img src="./images/arrow_down.png" alt="Стрелочка вниз">
+        Вашего объекта
+        <img src="./images/arrow_down.png" alt="Стрелочка вниз">
+    </p>
+    <button id="get_fast_calculate__button"><img src="./images/calculator_in_hand.png" alt="Калькулятор в руке">Получить быстрый расчёт</button>
+</section>
+<section id="rigid_ppu">
+    <div id="rigid_ppu__carousel">
+        <div id="rigid_ppu__carousel-images" class="owl-carousel owl-loaded">
+            <div class="carousel-item">
+                <img src="./images/carousel_image_1.jpg" alt="Жёсткий ППУ">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/carousel_image_2.jpg" alt="Жёсткий ППУ">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/carousel_image_3.jpg" alt="Жёсткий ППУ">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/carousel_image_4.jpg" alt="Жёсткий ППУ">
+            </div>
+        </div>
+    </div>
+    <h2 id="rigid_ppu__caption">ЖЁСТКИЙ ППУ</h2>
+    <p id="rigid_ppu__description">Закрытоячеистый ППУ, можно использовать как финишное покрытие, но только при использовании качественных компонентов.
+        Мы рекомендуем избегать всевозможные "самовары" и применять только качественные ППУ.
+        <br>
+        <br>
+        Тем не менее поверхность необходимо защитить от ультрафиолета (покраска / штукатурка).
+        Многие спрашивают, как долго ППУ может простоять под солнцем, отвечаем — за пару
+        лет деградирует наружный слой 1-2 мм, далее процесс деградации затрудняется наличием корки.
+        <br>
+        <br>
+        Жесткий ППУ идеален при утеплении пола, цоколя, не дышащих стен, металлических конструкций.</p>
+    <button id="rigid_ppu__calculate"><img src="./images/calculator2.png" alt="Калькулятор">Рассчитать цену</button>
 </section>
 <footer id="footer">
     <div id="footer__logo">
