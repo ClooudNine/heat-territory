@@ -19,13 +19,17 @@
     <link rel="stylesheet" href="./css/before_and_after.css">
     <link rel="stylesheet" href="./css/get_fast_calculate.css">
     <link rel="stylesheet" href="./css/rigid_ppu.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/acquaintance.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Территория тепла</title>
     <script src="./js/jquery-3.7.0.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=cb3ff779-35e2-480e-981a-87e8bacb211c&load=package.standard&lang=ru-RU" type="text/javascript"></script>
     <script src="./js/before-after-slider.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="./js/yandex-map.js"></script>
 </head>
 <body>
 <header class="header">
@@ -256,7 +260,60 @@
         Жесткий ППУ идеален при утеплении пола, цоколя, не дышащих стен, металлических конструкций.</p>
     <button id="rigid_ppu__calculate"><img src="./images/calculator2.png" alt="Калькулятор">Рассчитать цену</button>
 </section>
+<section id="contacts">
+    <div id="contacts__main">
+        <h2 id="contacts__main-caption">Контакты</h2>
+        <div id="contacts__main-info">
+            <div class="contacts__main-info-item"><img src="./images/city.png" alt="Адрес"><p>Одинцово, ул. Говорова 18А</div>
+            <div class="contacts__main-info-item"><img src="./images/telephone.png" alt="Телефон">8 (499) 40-40-747</div>
+            <div class="contacts__main-info-item"><img src="./images/mail.png" alt="E-mail">info@ttppu.ru</div>
+        </div>
+        <button id="contacts__main-button">Оставить заявку</button>
+    </div>
+    <div id="contacts__map"></div>
+</section>
+<section id="acquaintance">
+    <h2 id="acquaintance__caption"><img src="./images/human_acquaintance.png" alt="Давайте познакомимся">ДАВАЙТЕ ПОЗНАКОМИМСЯ</h2>
+    <div id="acquaintance__description">Посмотрите фото нашего рабочего процесса ниже</div>
+    <div id="acquaintance__gallery">
+        <div class="acquaintance__gallery-item gallery__item--1">
+            <img src="./images/gallery_photo_1.png" class="gallery__img" alt="Изображение 1">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--2">
+            <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 2">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--3">
+            <img src="./images/gallery_photo_3.png" class="gallery__img" alt="Изображение 3">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--4">
+            <img src="./images/gallery_photo_4.png" class="gallery__img" alt="Изображение 4">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--5">
+            <img src="./images/gallery_photo_5.png" class="gallery__img" alt="Изображение 5">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--6">
+            <img src="./images/gallery_photo_6.png" class="gallery__img" alt="Изображение 6">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--7">
+            <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 7">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--8">
+            <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 8">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--9">
+            <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 9">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--10">
+            <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 10">
+        </div>
+        <div class="acquaintance__gallery-item gallery__item--11">
+            <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 11">
+        </div>
+    </div>
+    <div id="acquaintance__footer">Мы стараемся постоянно пополнять его :)</div>
+</section>
 <footer id="footer">
+    <hr id="footer__line">
     <div id="footer__logo">
         <img src="./images/header_logo.png" alt="Территория тепла">
         <p>© 2023 "Территория Тепла"</p>
@@ -271,7 +328,7 @@
         <div>
             <img src="./images/phone.png" alt="Номер телефона">
             <div>
-                <p id="footer__address-number">+7(499)40-40-747</p>
+                <p><b>+7(499)40-40-747</b></p>
                 <p>Мы на связи: 8:00 - 18:00</p>
             </div>
         </div>
@@ -279,7 +336,7 @@
             <img src="./images/city.png" alt="Адрес">
             <div>
                 <p>Адрес:</p>
-                <p id="footer__address-full">Одинцово, ул. Говорова 18А</p>
+                <p><b>Одинцово, ул. Говорова 18А</b></p>
             </div>
         </div>
     </div>
