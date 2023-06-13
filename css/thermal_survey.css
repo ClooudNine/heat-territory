@@ -1,0 +1,130 @@
+#thermal_survey {
+    margin-top: 150px;
+    background: url("/images/free-bg.png") no-repeat center;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 15vw 30vw 14vw 30vw 10vw;
+    grid-template-rows: 10vh 10vh 40vh 10vh;
+}
+
+#thermal_survey__caption {
+    grid-row: 2/2;
+    grid-column: 2/3;
+    filter: drop-shadow(0px 4px 37px #FFFFFF);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Intro', sans-serif;
+    font-size: 2vw;
+    color: #000000;
+}
+
+#thermal_survey__caption > img {
+    height: 50%;
+    width: auto;
+}
+
+#thermal_survey__description {
+    grid-row: 3/3;
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    font-family: 'Montserrat', sans-serif;
+    place-self: center start;
+    font-size: 1vw;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+}
+
+#thermal_survey__form {
+    grid-row: 2/4;
+    grid-column: 4/4;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #CBCBCB;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#thermal_survey__form-free {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border-radius: 34px 34px 0 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    width: 30%;
+    height: 10%;
+    place-self: end;
+    margin-top: -25px;
+    margin-right: -1px;
+    font-size: 1.7vw;
+    color: #FFFFFF;
+}
+
+#thermal_survey__form-caption {
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4vw;
+    text-align: center;
+    color: #000000;
+}
+
+#thermal_survey__form-telephone {
+    margin-top: 10%;
+    width: 85%;
+    height: 50%;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#thermal_survey__form-telephone > label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #000000;
+}
+
+#thermal_survey__form-telephone > input {
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    height: 20%;
+    margin-top: 3%;
+}
+
+#thermal_survey__form-telephone > button {
+    margin-top: 10%;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 0 #E0A829, 3px 4px 10px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #531E00;
+    height: 30%;
+}
+
+#thermal_survey__form-note, #thermal_survey__form-note > a  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: #CBCBCB;
+    margin-left: 9%;
+}
+
+#thermal_survey__background {
+    grid-column: 1/-1;
+    grid-row: 1/4;
+    width: 40%;
+    place-self: center;
+}
