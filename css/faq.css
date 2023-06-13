@@ -1,14 +1,14 @@
 #faq {
-    margin-top: 100px;
+    margin-top: 150px;
     display: grid;
     grid-template-rows: 5vh auto;
-    grid-template-columns: 15vw 70vw 15vw;
-    gap: 40px 0;
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    gap: 40px 30px;
 }
 
 #faq__caption {
     grid-row: 1/1;
-    grid-column: 2/2;
+    grid-column: 2/4;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -20,16 +20,69 @@
     height: 100%;
 }
 
-#faq__answers {
+#faq__answers-column_first {
     grid-row: 2/2;
     grid-column: 2/2;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 20px
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+#faq__answers-column_second {
+    grid-row: 2/2;
+    grid-column: 3/3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+#faq__answers-column_first .accordion-header, #faq__answers-column_second .accordion-header {
+    padding: 20px 15px 20px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: #000000;
+}
+
+#faq__answers-column_first .ui-accordion-content, #faq__answers-column_second .ui-accordion-content  {
+    padding: 20px 10px 20px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8vw;
+    color: #000000;
+}
+
+.accordion-header__button {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    box-shadow: 0 1px 0 #E0A829, 0 4px 7px #FFCC40;
+    border-radius: 50%;
+    border: none;
+}
+
+.accordion-header__button > img {
+    margin-top: 3px;
+    transition: 0.3s all;
 }
 
 .accordion-item {
     background: #FFFFFF;
     border: 1px solid #CBCBCB;
     border-radius: 10px;
+}
+
+#faq__answers-column_first .ui-accordion-header-active .accordion-header__button > img,
+#faq__answers-column_second .ui-accordion-header-active .accordion-header__button > img{
+    transform: rotate(-180deg);
+}
+
+#faq__answers-column_first .ui-accordion-header-active > span,
+#faq__answers-column_second .ui-accordion-header-active > span {
+    font-weight: bold;
 }

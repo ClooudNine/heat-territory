@@ -1,5 +1,8 @@
 #get_fast_calculate {
-    background: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF url("/images/Vector 3.png") no-repeat bottom;
+    background-size: 100% auto;
     border: 1px solid #CCE6FC;
     box-shadow: 0 4px 4px rgba(97, 180, 255, 0.2);
     border-radius: 10px;
@@ -16,6 +19,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
     text-align: center;
+    padding-top: 30px;
     color: #000000;
 }
 
@@ -35,9 +39,9 @@
 
 #get_fast_calculate__button > img {
     position: absolute;
-    width: 90%;
+    width: 70%;
     height: auto;
-    bottom: -60%;
+    bottom: -55%;
     left: -30%;
 }
 
