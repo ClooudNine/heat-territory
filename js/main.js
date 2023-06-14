@@ -68,7 +68,7 @@ $(document).ready(function () {
 
         // Галерея изображений
 
-        const swiperWork = new Swiper('#work_gallery__first', {
+        const swiperWorkFirst = new Swiper('#work_gallery__first', {
             slidesPerView: 3,
             centeredSlides: true,
             loop: true,
@@ -83,9 +83,22 @@ $(document).ready(function () {
             }
         });
 
+        const swiperWorkSecond = new Swiper('#work_gallery__second', {
+            slidesPerView: 2,
+            loop: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '#rigid_ppu__carousel-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '#rigid_ppu__carousel-next',
+                prevEl: '#rigid_ppu__carousel-prev',
+            }
+        });
+
         const swiperRigidPpu = new Swiper('#rigid_ppu__carousel', {
-            slidesPerView: 2.5,
-            centeredSlides: true,
+            slidesPerView: 2,
             loop: true,
             spaceBetween: 30,
             pagination: {

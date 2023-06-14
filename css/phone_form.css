@@ -36,7 +36,7 @@
 
 #phone_form__description > p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1vw;
     color: #FFFFFF;
 }
 
@@ -52,7 +52,7 @@
 }
 
 #phone_form__description > div > img{
-    transform: scale(2);
+    width: 70%;
 }
 
 #phone_form__form {

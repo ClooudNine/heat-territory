@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/before_and_after.css">
     <link rel="stylesheet" href="./css/get_fast_calculate.css">
     <link rel="stylesheet" href="./css/rigid_ppu.css">
+    <link rel="stylesheet" href="./css/quiz.css">
     <link rel="stylesheet" href="./css/faq.css">
     <link rel="stylesheet" href="./css/work_gallery.css">
     <link rel="stylesheet" href="./css/thermal_survey.css">
@@ -49,31 +50,31 @@
         <button id="contacts__callback">Перезвоните мне</button>
     </div>
 </header>
-<main id="main">
-    <img id="main__cloud" src="./images/main_cloud.png" alt="Облако">
-    <h1>УТЕПЛЯЕМ <br> НАПЫЛЯЕМЫМ <br> ППУ <small>С ГАРАНТИЕЙ 30 ЛЕТ</small></h1>
-    <img id="main__mobile" src="./images/mobile_main_bg.png" alt="Мобильные обои">
-    <div id="main__features">
-        <div id="features__without_prepayment">
-            <img src="./images/without_prepayment.png" alt="Оплата по факту выполнения">
-            <p>Оплата по факту выполнения</p>
+<main class="main">
+    <div class="main__content">
+        <h1 class="main__caption">УТЕПЛЯЕМ <br> НАПЫЛЯЕМЫМ <br> ППУ <span>С ГАРАНТИЕЙ 30 ЛЕТ</span></h1>
+        <div class="main__features">
+            <div class="main__prepayment main__prepayment_first--rotated">
+                <img src="./images/without_prepayment.png" alt="Оплата по факту выполнения">
+                <p>Оплата по факту выполнения</p>
+            </div>
+            <div class="main__prepayment main__prepayment_second--rotated">
+                <img src="./images/payment.png" alt="Вернём деньги">
+                <p>Снизим платежи за отопление на 40% или <b>вернём деньги</b></p>
+            </div>
         </div>
-        <div id="features__money_back">
-            <img src="./images/payment.png" alt="Вернём деньги">
-            <p>Снизим платежи за отопление на 40% или <b>вернём деньги</b></p>
+        <div class="main__description">
+            <p>Получите <b>бесплатное</b> теплотехническое <br> обследование</p>
+            <p>После обследования Вы будете точно знать, как добиться <br>
+                максимального снижения теплопотерь за наименьший бюджет</p>
         </div>
-    </div>
-    <div id="main__description">
-        <p>Получите <b>бесплатное</b> теплотехническое <br> обследование</p>
-        <p>После обследования Вы будете точно знать, как добиться <br>
-            максимального снижения теплопотерь за наименьший бюджет</p>
-    </div>
-    <div id="main__scroll_and_inspection">
-        <button id="inspection__get">
-            <img src="/images/men_with_thermal_imager.png" alt="Мужчина с тепловизором">
-            Получить обследование
-        </button>
-        <img id="main__scroll" src="/images/scroll.png" alt="Листай">
+        <div class="main__footer">
+            <button class="main__inspection">
+                <img src="./images/men_with_thermal_imager.png" alt="Мужчина с тепловизором">
+                Получить обследование
+            </button>
+            <img class="main__scroll" src="./images/scroll.png" alt="Листай">
+        </div>
     </div>
 </main>
 <section id="guarantees">
@@ -244,14 +245,22 @@
 <section id="rigid_ppu">
     <div id="rigid_ppu__carousel" class="swiper">
         <div class="swiper-wrapper rigid_ppu__carousel-wrapper">
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_1.jpg" alt="Изображение 1"></div>
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_2.jpg" alt="Изображение 2"></div>
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_3.jpg" alt="Изображение 3"></div>
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_4.jpg" alt="Изображение 4"></div>
+            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_1.jpg"
+                                                                     alt="Изображение 1"></div>
+            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_2.jpg"
+                                                                     alt="Изображение 2"></div>
+            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_3.jpg"
+                                                                     alt="Изображение 3"></div>
+            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_4.jpg"
+                                                                     alt="Изображение 4"></div>
         </div>
         <div class="swiper-pagination" id="rigid_ppu__carousel-pagination"></div>
-        <div class="swiper-button-prev" id="rigid_ppu__carousel-prev"></div>
-        <div class="swiper-button-next" id="rigid_ppu__carousel-next"><button><img src="./images/Arrow%204.png" alt="Следующий слайд"></button></div>
+        <div class="swiper-button-next" id="rigid_ppu__carousel-prev">
+            <button><img src="./images/Arrow%204.png" alt="Следующий слайд"></button>
+        </div>
+        <div class="swiper-button-next" id="rigid_ppu__carousel-next">
+            <button><img src="./images/Arrow%204.png" alt="Следующий слайд"></button>
+        </div>
     </div>
     <h2 id="rigid_ppu__caption">ЖЁСТКИЙ ППУ</h2>
     <p id="rigid_ppu__description">Закрытоячеистый ППУ, можно использовать как финишное покрытие, но только при
@@ -266,6 +275,24 @@
         <br>
         Жесткий ППУ идеален при утеплении пола, цоколя, не дышащих стен, металлических конструкций.</p>
     <button id="rigid_ppu__calculate"><img src="./images/calculator2.png" alt="Калькулятор">Рассчитать цену</button>
+</section>
+<section id="quiz">
+    <div id="quiz__content">
+        <div id="quiz__caption">
+            <p><b>Рассчитайте стоимость</b><br>утепления ППУ <span>за 1 минуту</span></p>
+            <img src="./images/sand_clock.png" alt="Песочные часы">
+        </div>
+        <p id="quiz__description">
+            Ответьте на 7 вопросов - получите <br> тепловизионное обследование <br>
+            <b>БЕСПЛАТНО.</b>
+        </p>
+        <p id="quiz__send-price">
+            Прайс отправим на <span style="color: #8EC200; font-weight: 800">WhatsApp</span><br>
+            или перезвоним когда удобно!
+        </p>
+        <button id="quiz__calculate"><img src="./images/calculator3.png" alt="Рассчитать стоимость">Рассчитать стоимость
+        </button>
+    </div>
 </section>
 <section id="faq">
     <h2 id="faq__caption"><img src="./images/thinking_face.png" alt="Часто задаваемые вопросы">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
@@ -408,18 +435,58 @@
 <section id="work_gallery">
     <h2 id="work_gallery__caption"><img src="./images/camera.png" alt="Некоторые наши работы">НЕКОТОРЫЕ НАШИ РАБОТЫ</h2>
     <div id="work_gallery__first" class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/slide-1.jpg" alt="Изображение 1"></div>
-            <div class="swiper-slide"><img src="./images/slide-2.jpg" alt="Изображение 2"></div>
-            <div class="swiper-slide"><img src="./images/slide-3.jpg" alt="Изображение 3"></div>
-            <div class="swiper-slide"><img src="./images/slide-4.jpg" alt="Изображение 4"></div>
-            <div class="swiper-slide"><img src="./images/slide-5.jpg" alt="Изображение 5"></div>
+        <div class="swiper-wrapper" id="work_gallery__first-wrapper">
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-1.jpg" alt="Изображение 1">
+            </div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-2.jpg" alt="Изображение 2">
+            </div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-3.jpg" alt="Изображение 3">
+            </div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-4.jpg" alt="Изображение 4">
+            </div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-5.jpg" alt="Изображение 5">
+            </div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_1.jpg"
+                                                                     alt="Изображение 6"></div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_2.jpg"
+                                                                     alt="Изображение 7"></div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_1.jpg"
+                                                                     alt="Изображение 8"></div>
+            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_2.jpg"
+                                                                     alt="Изображение 9"></div>
+        </div>
+        <div class="swiper-pagination" id="work_gallery__first-pagination"></div>
+        <div class="swiper-button-prev" id="work_gallery__first-prev">
+            <button><img src=./images/arrow_for_gallery.png alt="Слайд влево"></button>
+        </div>
+        <div class="swiper-button-next" id="work_gallery__first-next">
+            <button><img src=./images/arrow_for_gallery.png alt="Слайд вправо"></button>
+        </div>
+    </div>
+    <div id="work_gallery__second" class="swiper">
+        <div class="swiper-wrapper" id="work_gallery__second-wrapper">
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-1.jpg" alt="Изображение 1">
+            </div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-2.jpg" alt="Изображение 2">
+            </div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-3.jpg" alt="Изображение 3">
+            </div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-4.jpg" alt="Изображение 4">
+            </div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-5.jpg" alt="Изображение 5">
+            </div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_1.jpg"
+                                                                      alt="Изображение 6"></div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_2.jpg"
+                                                                      alt="Изображение 7"></div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_1.jpg"
+                                                                      alt="Изображение 8"></div>
+            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_2.jpg"
+                                                                      alt="Изображение 9"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-    </div>
-    <div id="work_gallery__second">
     </div>
 </section>
 <section id="thermal_survey">
