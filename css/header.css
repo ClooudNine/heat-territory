@@ -5,7 +5,7 @@
     height: 10vh;
 }
 
-#header__logo {
+.header__logo {
     width: 45%;
     padding-right: 3%;
     display: flex;
@@ -15,25 +15,24 @@
     background: white;
 }
 
-#header__logo img {
-    height: auto;
+.header__logo img {
     width: 20%;
 }
 
-#header__logo p {
+.header__logo p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vmin;
+    font-size: 0.8vmax;
 }
 
-#header__contacts {
+.header__contacts {
     background: #61B4FF;
-    gap: 0 7%;
+    gap: 50px;
     width: 60%;
     height: 80%;
     display: flex;
 }
 
-#contacts__call {
+.header__telephone {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -41,35 +40,26 @@
     gap: 4%;
 }
 
-#contacts__call button {
-    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-#contacts__num, #contacts__hours {
+.header__number, .header__working-hours {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    margin: 0;
 }
 
-#contacts__num {
+.header__number {
     font-weight: 700;
-    font-size: 2vmin;
+    font-size: 1vmax;
 }
 
-#contacts__hours {
+.header__working-hours {
     font-weight: 500;
-    font-size: 1.4vmin;
+    font-size: 0.7vmax;
 }
 
-#contacts__callback {
+.header__callback {
     background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
     border: 1px solid rgba(255, 255, 255, 0.5);
     height: 55%;
-    width: 20%;
+    width: 18%;
     align-self: center;
     overflow-wrap: break-word;
     box-shadow: 0 0 13px rgba(255, 190, 22, 0.5);
@@ -77,57 +67,58 @@
     font-weight: 700;
     font-size: 1.5vmin;
     color: #531E00;
-    border-radius: 1vmin;
+    border-radius: 0.5vmax;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     .header {
         height: 40vh;
         flex-direction: column;
     }
 
-    #header__logo {
+    .header__logo {
         width: 100%;
-        padding: 20px 0 0 0;
+        height: 50%;
+        padding: 0;
         flex-direction: column;
-        gap: 0;
+        justify-content: center;
     }
 
-    #header__logo img {
-        width: 60%;
+    .header__logo img {
+        height: 40%;
+        width: auto;
     }
 
-    #header__logo p {
-        font-size: 4vmin;
+    .header__logo p {
+        font-size: 3.5vw;
         text-align: center;
     }
 
-    #header__contacts {
-        gap: 15% 0;
+    .header__contacts {
+        height: 50%;
+        gap:  20px;
         width: 100%;
         flex-direction: column;
+        justify-content: center;
     }
 
-    #contacts__call {
-        padding-top: 4%;
+    .header__telephone {
         justify-content: center;
         width: 100%;
-        gap: 4%;
     }
 
-    #contacts__num {
-        font-size: 5vmin;
+    .header__number {
+        font-size: 2.5vh;
     }
 
-    #contacts__hours {
-        padding-top: 2%;
-        font-size: 3vmin;
+    .header__working-hours {
+        font-size: 1.5vh;
     }
 
-    #contacts__callback {
+    .header__callback {
         height: 30%;
         width: 40%;
-        font-size: 3.5vmin;
-        border-radius: 2.5vmin;
+        font-size: 3.5vw;
+        border-radius: 2vw;
     }
 }

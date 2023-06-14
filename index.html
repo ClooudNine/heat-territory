@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/characteristics.css">
+    <link rel="stylesheet" href="css/guarantees.css">
     <link rel="stylesheet" href="./css/space_insulation.css">
     <link rel="stylesheet" href="./css/price.css">
     <link rel="stylesheet" href="./css/insulated_objects.css">
@@ -35,19 +35,19 @@
 </head>
 <body>
 <header class="header">
-    <div id="header__logo">
+    <div class="header__logo">
         <img src="./images/header_logo.png" alt="Логотип 'Территория тепла'">
         <p>Знаем всё про утепление <br> пенополиуретаном</p>
     </div>
-    <div id="header__contacts">
-        <div id="contacts__call">
-            <button><img src="./images/phone.svg" alt="Номер телефона"></button>
+    <div class="header__contacts">
+        <div class="header__telephone">
+            <img src="./images/phone.png" alt="Номер телефона">
             <div>
-                <p id="contacts__num">+7(499)40-40-747</p>
-                <p id="contacts__hours">Мы на связи: 8:00 - 18:00</p>
+                <p class="header__number">+7(499)40-40-747</p>
+                <p class="header__working-hours">Мы на связи: 8:00 - 18:00</p>
             </div>
         </div>
-        <button id="contacts__callback">Перезвоните мне</button>
+        <button class="header__callback">Перезвоните мне</button>
     </div>
 </header>
 <main class="main">
@@ -77,26 +77,26 @@
         </div>
     </div>
 </main>
-<section id="guarantees">
-    <div id="guarantees__container">
-        <div>
-            <img src="/images/warranty.png" alt="Гарантия 30 лет, но мы страхуемся">
+<section class="guarantees">
+    <div class="guarantees__container">
+        <div class="guarantees__item">
+            <img src="./images/warranty.png" alt="Гарантия 30 лет, но мы страхуемся">
             <p class="caption_warranty">Гарантия 30 лет,<br> но мы страхуемся</p>
             <p class="description_warranty">Чтобы всё было честно, уже этой зимой проведем обследование тепловизором,
                 и <b> устраним все недостатки </b> мосты холода <b> за свой счёт. </b>
                 Реальный срок эксплуатации ППУ более 70 лет (может и больше).
                 Ведь он не разлагается и не крошится - вообще. </p>
         </div>
-        <div>
-            <img src="/images/best_materials.png" alt="Лучшие материалы - гарантия экологичности">
+        <div class="guarantees__item">
+            <img src="./images/best_materials.png" alt="Лучшие материалы - гарантия экологичности">
             <p class="caption_warranty">Лучшие материалы - <br> гарантия экологичности</p>
             <p class="description_warranty">Используем только материалы <b> проверенные временем компоненты </b> ППУ.
                 Lallafom, BASF, Huntsman, Ecotermix Premium.
                 Вы можете быть абсолютно спокойны в отношении экологичности материала.
                 ППУ - пожалуй самый экологичный материал. </p>
         </div>
-        <div>
-            <img src="/images/compensation.png" alt="Полная компенсация финансовых издержек">
+        <div class="guarantees__item">
+            <img src="./images/compensation.png" alt="Полная компенсация финансовых издержек">
             <p class="caption_warranty">Полная компенсация <br> финансовых издержек</p>
             <p class="description_warranty">Все гарантируют замену утеплителя в случае ошибки, но забывают про стоимость
                 уже сделанного ремонта.
@@ -105,22 +105,23 @@
         </div>
     </div>
 </section>
-<section id="space_insulation">
-    <h1 id="space_caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h1>
-    <div id="space_description">
-        <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в космической
-            промышленности.
-            В частности, Советский космический корабль многоразового использования Буран был утеплен ППУ. </p>
-        <br>
-        <p>Минимальный слой - максимальная энергоэффективность.</p>
-        <br>
-        <p>ППУ– это негорючий и самый энергоэффективный утеплитель в мире. </p>
-        <p>8 см ППУ — 190 см кирпича! И это не шутка. <br>5 см ППУ — 15 см СУХОЙ минваты без стыков с деревом. </p>
+<section class="space_insulation">
+    <div class="space_insulation__container">
+        <h1 class="space_insulation__caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h1>
+        <div class="space_insulation__description">
+            <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в
+                космической
+                промышленности.
+                В частности, Советский космический корабль многоразового использования Буран был утеплен ППУ. </p>
+            <br>
+            <p>Минимальный слой - максимальная энергоэффективность.</p>
+            <br>
+            <p>ППУ– это негорючий и самый энергоэффективный утеплитель в мире. </p>
+            <p>8 см ППУ — 190 см кирпича! И это не шутка. <br>5 см ППУ — 15 см СУХОЙ минваты без стыков с деревом. </p>
+        </div>
+        <img class="space_insulation__differences" src="./images/blocks_stat.png" alt="Различия кирпичей и ППУ">
+        <button class="space_insulation__calculate"><img src="./images/calculator.png" alt="Калькулятор"> Рассчитать цену утепления</button>
     </div>
-    <img id="differences" src="/images/blocks_stat.png" alt="Различия кирпичей и ППУ">
-    <button id="calculate_price"><img src="/images/calculator.png" alt="Калькулятор"> Рассчитать цену утепления</button>
-    <img id="left_space_cloud" src="/images/lefts-space-cloud.png" alt="Левое облако">
-    <img id="right_space_cloud" src="/images/right-space-cloud.png" alt="Правое облако">
 </section>
 <section id="price">
     <h2 id="price__caption"><img src="./images/bookmark.png" alt="Цены на работы">Цены на работы</h2>

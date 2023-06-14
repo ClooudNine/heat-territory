@@ -1,0 +1,80 @@
+.guarantees {
+    position: relative;
+    z-index: 1;
+    width: 81%;
+    height: 30vw;
+    margin-left: auto;
+    margin-top: 5vw;
+    padding-left: 4vw;
+    border-radius: 5px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.guarantees__container {
+    width: 75%;
+    height: 85%;
+    display: flex;
+    gap: 5%;
+}
+
+.guarantees__item {
+    display: grid;
+    grid-template-rows: 40% 15% 45%;
+    gap: 20px;
+    place-items: start center;
+    background: #EAF5FF;
+}
+
+.guarantees__item > img {
+    place-self: center;
+    width: 50%;
+}
+
+.caption_warranty, .description_warranty {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caption_warranty {
+    font-weight: 700;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.description_warranty {
+    font-size: 0.8vw;
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 481px) {
+    .guarantees {
+        width: 100%;
+        height: auto;
+        margin: 25px 0 0 0;
+        padding: 0;
+        background: transparent;
+        flex-direction: column;
+    }
+
+    .guarantees__container {
+        width: 85%;
+        height: 100%;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    .guarantees__item {
+        height: 100vw;
+        background: #EAF5FF;
+    }
+
+    .caption_warranty {
+        font-size: 5vw;
+    }
+
+    .description_warranty {
+        font-size: 3.5vw;
+        padding-left: 3%;
+    }
+}
