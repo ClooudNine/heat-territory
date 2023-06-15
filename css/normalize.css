@@ -25,6 +25,7 @@ button {
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
 }
 
 /* Sections
@@ -37,6 +38,7 @@ html {
 body {
     margin: 0;
     background: #CCE6FC;
+    overflow-x: hidden;
 }
 
 p, h1, h2, h3, h4, h5, h6 {

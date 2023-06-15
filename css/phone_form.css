@@ -1,7 +1,7 @@
 #phone_form {
     background: #FFFFFF;
     width: 100%;
-    padding-top: 80px;
+    margin-top: 300px;
     display: grid;
     grid-template-columns: minmax(2%, 20%) 1fr 30vh;
     grid-template-rows: 26vh;
