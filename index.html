@@ -31,7 +31,7 @@
     <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=cb3ff779-35e2-480e-981a-87e8bacb211c&load=package.standard&lang=ru-RU"
             type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
 <header class="header">
@@ -197,26 +197,27 @@
         </div>
     </div>
 </section>
-<section id="phone_form">
-    <div id="phone_form__container">
-        <div id="phone_form__description">
-            <img src="./images/engineer.png" alt="Инженер">
-            <p>Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в WhatsApp</p>
-            <div><img src="./images/arrow.png" alt="Стрелка вправо"></div>
+<section class="phone_form">
+    <div class="phone_form__container">
+        <div class="phone_form__description">
+            <img class="phone_form__engineer" src="./images/engineer.png" alt="Инженер">
+            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в WhatsApp</p>
+            <div class="phone_form__arrow"><img src="./images/phone_form_arrow.svg" alt="Стрелка вправо"></div>
         </div>
-        <form id="phone_form__form">
+        <form class="phone_form__main">
             <label for="phone">Телефон * <small>Введите телефон для связи</small></label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10,14}" required>
-            <button type="submit"><img src="./images/whatsapp.png" alt="Получить консультацию">Получить консультацию
+            <button class="phone_form__submit" type="submit"><img src="./images/whatsapp.png" alt="Получить консультацию">Получить консультацию
             </button>
         </form>
     </div>
 </section>
-<section id="before_and_after">
-    <h2 id="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
-    <p id="before_and_after__description">так выглядит утепление мягким ППУ:</p>
-    <div id="before_and_after__container">
-        <div class="before_and_after__container-item" id="before_and_after__container-first">
+<section class="before_and_after">
+    <div class="before_and_after__container">
+    <h2 class="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
+    <p class="before_and_after__description">так выглядит утепление мягким ППУ:</p>
+    <div class="before_and_after__pictures before_and_after-pictures">
+        <div class="before_and_after-pictures__item" id="before_and_after-pictures__first">
             <div>до</div>
             <div class="view view-after" id="view-after-first">
                 <img src="./images/house_before.png" alt="До"/>
@@ -224,12 +225,12 @@
             <div class="view view-before">
                 <img src="./images/house_after.png" alt="После"/>
             </div>
-            <div class="dragme" id="dragme-first">
-                <div class="dr-circle"><img src="./images/drag.png" alt="Перетаскиватель"></div>
+            <div class="drag" id="drag-first">
+                <img class="dr-circle" src="./images/drag.png" alt="Перетаскиватель">
             </div>
             <div>после</div>
         </div>
-        <div class="before_and_after__container-item" id="before_and_after__container-second">
+        <div class="before_and_after-pictures__item" id="before_and_after-pictures__second">
             <div>до</div>
             <div class="view view-after" id="view-after-second">
                 <img src="./images/house_before.png" alt="До"/>
@@ -237,11 +238,12 @@
             <div class="view view-before">
                 <img src="./images/house_after.png" alt="После"/>
             </div>
-            <div class="dragme" id="dragme-second">
-                <div class="dr-circle"><img src="./images/drag.png" alt="Перетаскиватель"></div>
+            <div class="drag" id="drag-second">
+                <img class="dr-circle" src="./images/drag.png" alt="Перетаскиватель">
             </div>
             <div>после</div>
         </div>
+    </div>
     </div>
 </section>
 <section id="get_fast_calculate">

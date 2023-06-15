@@ -3,11 +3,11 @@ $(document).ready(function () {
     //Слайдер "До" и "После"
 
     (function($) {
-        var $dragMeFirst = $("#dragme-first"),
-            $containerFirst = $("#before_and_after__container-first"),
+        var $dragMeFirst = $("#drag-first"),
+            $containerFirst = $("#before_and_after-pictures__first"),
             $viewAfterFirst = $("#view-after-first"),
-            $dragMeSecond = $("#dragme-second"),
-            $containerSecond = $("#before_and_after__container-second"),
+            $dragMeSecond = $("#drag-second"),
+            $containerSecond = $("#before_and_after-pictures__second"),
             $viewAfterSecond = $("#view-after-second");
         $dragMeFirst.draggable({
             containment: "parent",
