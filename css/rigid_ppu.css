@@ -1,64 +1,55 @@
-#rigid_ppu {
+.rigid_ppu {
+    position: relative;
+    width: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #CDE6FC 100%), #87C6FF;
-    border-radius: 5px;
+}
+
+.rigid_ppu__container {
     display: grid;
-    margin-top: -145px;
-    grid-template-rows: 200px 5vh 35vh 5vh;
-    grid-template-columns: 55vw 35vw 8vw;
-    gap: 5% 0;
+    grid-template-rows: 9vw 4.5vw 22vw 5vw;
+    grid-template-columns: 50vw 35vw auto;
+    gap: 1vw 5vw;
+}
+
+.rigid_ppu__container::before {
+    content: '';
+    position: absolute;
+    background: url("/images/rigid_ppu_left_clouds.png") no-repeat left center;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    bottom: -10%;
+}
+
+.rigid_ppu__container::after {
+    content: '';
+    position: absolute;
+    background: url("/images/rigid_ppu_right_clouds.png") no-repeat right center;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    bottom: -20%;
+    right: -10%;
 }
 
 #rigid_ppu__carousel {
     margin-left: -10%;
+    padding: 2vw;
     grid-row: 2/-1;
     grid-column: 1/2;
     width: 100%;
 }
 
+#rigid_ppu__carousel-wrapper {
+    height: 75%;
+}
 
 .rigid_ppu__carousel-slide {
     background: #FFFFFF;
     box-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.3vw;
     box-sizing: border-box;
-}
-
-#rigid_ppu__carousel-next {
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    top: 90%;
-    left: 80%;
-}
-
-#rigid_ppu__carousel-prev {
-    width: 40px;
-    height: 40px;
-    top: 94.5%;
-    left: 70%
-}
-
-#rigid_ppu__carousel-pagination {
-    left: 27%;
-    top: 82%;
-}
-
-#rigid_ppu__carousel-next > button, #rigid_ppu__carousel-prev > button {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
-    box-shadow: 0 1px 0 #E0A829, 0 4px 7px #FFCC40;
-    border: none;
-    border-radius: 50%;
-}
-
-#rigid_ppu__carousel-prev > button > img {
-    transform: rotate(180deg);
-}
-
-#rigid_ppu__carousel-next::after, #rigid_ppu__carousel-prev::after {
-    content: none;
 }
 
 .rigid_ppu__carousel-slide > img {
@@ -67,49 +58,170 @@
     object-fit: cover;
 }
 
-.rigid_ppu__carousel-wrapper {
-    height: 75%;
+#rigid_ppu__carousel-pagination  {
+    left: 25%;
+    top: 75%;
 }
 
-#rigid_ppu__caption {
+.swiper-pagination-bullet {
+    background: url("/images/rigid_ppu_bullet.svg");
+}
+
+.swiper-pagination-bullet-active {
+    background: url("/images/rigid_ppu_bullet_active.svg");
+}
+
+#rigid_ppu__carousel-next::after, #rigid_ppu__carousel-prev::after {
+    content: none;
+}
+
+#rigid_ppu__carousel-next, #rigid_ppu__carousel-prev {
+    width: 2.5vw;
+    height: 2.5vw;
+    top: 87%;
+    left: 80%;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    box-shadow: 0 1px 0 #E0A829, 0 4px 7px #FFCC40;
+    border: none;
+    border-radius: 50%;
+}
+
+#rigid_ppu__carousel-next > img, #rigid_ppu__carousel-prev > img {
+    width: 60%;
+}
+
+#rigid_ppu__carousel-prev {
+    left: 67%;
+}
+
+#rigid_ppu__carousel-prev > img {
+    transform: rotate(180deg);
+}
+
+.rigid_ppu__caption {
+    z-index: 1;
     grid-row: 2/2;
     grid-column: 2/2;
+    place-self: end start;
     font-family: 'Intro', sans-serif;
     font-size: 2.5vw;
-    color: #000000;
 }
 
-
-
-#rigid_ppu__description {
+.rigid_ppu__description {
+    z-index: 1;
     grid-row: 3/3;
     grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #FFFFFF;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
     line-height: 1.2;
-    padding: 20px 30px 20px 30px;
+    padding: 1.5vw 2vw;
 }
 
-#rigid_ppu__calculate {
+.rigid_ppu__calculate {
+    place-self: center start;
+    position: relative;
     grid-row: 4/4;
     grid-column: 2/2;
     display: flex;
     align-items: center;
-    position: relative;
     background: linear-gradient(94.74deg, #FFFFFF 30.83%, rgba(255, 255, 255, 0) 76.02%), #ECECEC;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
     border-radius: 20px;
+    height: 70%;
     width: 50%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1vw;
-    color: #000000;
 }
 
-#rigid_ppu__calculate img {
-   height: 200%;
+.rigid_ppu__calculate > img {
+   height: 170%;
+}
+
+@media screen and (max-width: 481px) {
+    .rigid_ppu__container {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-rows: 55vw 140vw 25vw 150vw;
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+
+    .rigid_ppu__container::before {
+        background: url("/images/rigid_ppu_left_tree_mobile.png") no-repeat left center;
+        background-size: 65%;
+        right: 10%;
+        bottom: -7%;
+    }
+
+    .rigid_ppu__container::after {
+        background-position: center;
+        background-size: auto 45%;
+        width: 190%;
+        bottom: 14%;
+        right: -90%;
+    }
+
+    .rigid_ppu__caption {
+        grid-row: 1/1;
+        grid-column: 1/1;
+        font-size: 10vw;
+    }
+
+    .rigid_ppu__description {
+        background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+        grid-row: 2/2;
+        grid-column: 1/1;
+        height: 60%;
+        gap: 10vw;
+        margin-top: 5vw;
+        font-size: 4vw;
+        padding: 5vw 7vw 0 7vw;
+    }
+
+    #rigid_ppu__carousel {
+        margin-left: 0;
+        margin-top: 12vw;
+        padding: 0;
+        grid-row: 4/4;
+        grid-column: 1/1;
+    }
+
+    .rigid_ppu__carousel-slide {
+        padding: 4vw 2vw;
+    }
+
+    .rigid_ppu__calculate {
+        margin-top: 5vw;
+        place-self: center;
+        grid-row: 3/3;
+        grid-column: 1/1;
+        height: 60%;
+        width: 90%;
+        border-radius: 8vw;
+        font-size: 4.5vw;
+    }
+
+    #rigid_ppu__carousel-pagination  {
+        left: 2%;
+        top: 78%;
+    }
+
+    #rigid_ppu__carousel-next, #rigid_ppu__carousel-prev {
+        width: 12vw;
+        height: 12vw;
+        top: 87%;
+        left: 60%;
+    }
+
+    #rigid_ppu__carousel-prev {
+        left: 30%;
+    }
 }

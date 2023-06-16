@@ -1,0 +1,99 @@
+.fast_calculate {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 12vw;
+    background: #FFFFFF;
+}
+
+.fast_calculate__container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 15vw 70vw 15vw;
+}
+
+.fast_calculate__content {
+    margin-top: 8vw;
+    grid-row: 1/1;
+    grid-column: 2/2;
+    height: 80%;
+    width: 80%;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/images/fast_calculate_bg.png") no-repeat center bottom, #FFFFFF;
+    background-size: 100%;
+    border: 1px solid rgba(204, 230, 252, 0.5);
+    box-shadow: 0 4px 4px rgba(97, 180, 255, 0.2);
+    border-radius: 10px;
+}
+
+.fast_calculate__caption {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.fast_calculate__button {
+    position: relative;
+    margin-top: 1.5vw;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 0 #E0A829, 3px 4px 10px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
+    border-radius: 10px;
+    width: 45%;
+    height: 35%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #531E00;
+}
+
+.fast_calculate__button > img {
+    position: absolute;
+    width: 80%;
+    bottom: -62%;
+    left: -30%;
+}
+
+@media screen and (max-width: 481px) {
+    .fast_calculate {
+        height: 60vw;
+    }
+
+    .fast_calculate__container {
+        height: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .fast_calculate__content {
+        margin-top: 50vw;
+        grid-column: 1/1;
+        height: 100%;
+        width: 90%;
+        background-size: 230%;
+        background-position: left bottom;
+    }
+
+    .fast_calculate__caption {
+       display: none;
+    }
+
+    .fast_calculate__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5vw;
+        width: 100%;
+        height: 35%;
+        font-size: 5vw;
+    }
+
+    .fast_calculate__button > img {
+        width: 100%;
+        bottom: -38vw;
+        left: 20vw;
+    }
+}

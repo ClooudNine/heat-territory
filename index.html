@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/insulated_objects.css">
     <link rel="stylesheet" href="./css/phone_form.css">
     <link rel="stylesheet" href="./css/before_and_after.css">
-    <link rel="stylesheet" href="./css/get_fast_calculate.css">
+    <link rel="stylesheet" href="css/fast_calculate.css">
     <link rel="stylesheet" href="./css/rigid_ppu.css">
     <link rel="stylesheet" href="./css/quiz.css">
     <link rel="stylesheet" href="./css/faq.css">
@@ -201,111 +201,114 @@
     <div class="phone_form__container">
         <div class="phone_form__description">
             <img class="phone_form__engineer" src="./images/engineer.png" alt="Инженер">
-            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в WhatsApp</p>
+            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в
+                WhatsApp</p>
             <div class="phone_form__arrow"><img src="./images/phone_form_arrow.svg" alt="Стрелка вправо"></div>
         </div>
         <form class="phone_form__main">
             <label for="phone">Телефон * <small>Введите телефон для связи</small></label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10,14}" required>
-            <button class="phone_form__submit" type="submit"><img src="./images/whatsapp.png" alt="Получить консультацию">Получить консультацию
+            <button class="phone_form__submit" type="submit"><img src="./images/whatsapp.png"
+                                                                  alt="Получить консультацию">Получить консультацию
             </button>
         </form>
     </div>
 </section>
 <section class="before_and_after">
     <div class="before_and_after__container">
-    <h2 class="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
-    <p class="before_and_after__description">так выглядит утепление мягким ППУ:</p>
-    <div class="before_and_after__pictures before_and_after-pictures">
-        <div class="before_and_after-pictures__item" id="before_and_after-pictures__first">
-            <div>до</div>
-            <div class="view view-after" id="view-after-first">
-                <img src="./images/house_before.png" alt="До"/>
+        <h2 class="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
+        <p class="before_and_after__description">так выглядит утепление мягким ППУ:</p>
+        <div class="before_and_after__pictures before_and_after-pictures">
+            <div class="before_and_after-pictures__item" id="before_and_after-pictures__first">
+                <div>до</div>
+                <div class="view view-after" id="view-after-first">
+                    <img src="./images/house_before.png" alt="До"/>
+                </div>
+                <div class="view view-before">
+                    <img src="./images/house_after.png" alt="После"/>
+                </div>
+                <div class="drag" id="drag-first">
+                    <img class="dr-circle" src="./images/drag.png" alt="Круг">
+                </div>
+                <div>после</div>
             </div>
-            <div class="view view-before">
-                <img src="./images/house_after.png" alt="После"/>
+            <div class="before_and_after-pictures__item" id="before_and_after-pictures__second">
+                <div>до</div>
+                <div class="view view-after" id="view-after-second">
+                    <img src="./images/house_before.png" alt="До"/>
+                </div>
+                <div class="view view-before">
+                    <img src="./images/house_after.png" alt="После"/>
+                </div>
+                <div class="drag" id="drag-second">
+                    <img class="dr-circle" src="./images/drag.png" alt="Круг">
+                </div>
+                <div>после</div>
             </div>
-            <div class="drag" id="drag-first">
-                <img class="dr-circle" src="./images/drag.png" alt="Перетаскиватель">
-            </div>
-            <div>после</div>
-        </div>
-        <div class="before_and_after-pictures__item" id="before_and_after-pictures__second">
-            <div>до</div>
-            <div class="view view-after" id="view-after-second">
-                <img src="./images/house_before.png" alt="До"/>
-            </div>
-            <div class="view view-before">
-                <img src="./images/house_after.png" alt="После"/>
-            </div>
-            <div class="drag" id="drag-second">
-                <img class="dr-circle" src="./images/drag.png" alt="Перетаскиватель">
-            </div>
-            <div>после</div>
-        </div>
-    </div>
-    </div>
-</section>
-<section id="get_fast_calculate">
-    <p id="get_fast_calculate__caption">Узнайте стоимость утепления <br>
-        <img src="./images/arrow_down.png" alt="Стрелочка вниз">
-        Вашего объекта
-        <img src="./images/arrow_down.png" alt="Стрелочка вниз">
-    </p>
-    <button id="get_fast_calculate__button"><img src="./images/calculator_in_hand.png" alt="Калькулятор в руке">Получить
-        быстрый расчёт
-    </button>
-</section>
-<section id="rigid_ppu">
-    <div id="rigid_ppu__carousel" class="swiper">
-        <div class="swiper-wrapper rigid_ppu__carousel-wrapper">
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_1.jpg"
-                                                                     alt="Изображение 1"></div>
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_2.jpg"
-                                                                     alt="Изображение 2"></div>
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_3.jpg"
-                                                                     alt="Изображение 3"></div>
-            <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_4.jpg"
-                                                                     alt="Изображение 4"></div>
-        </div>
-        <div class="swiper-pagination" id="rigid_ppu__carousel-pagination"></div>
-        <div class="swiper-button-next" id="rigid_ppu__carousel-prev">
-            <button><img src="./images/Arrow%204.png" alt="Следующий слайд"></button>
-        </div>
-        <div class="swiper-button-next" id="rigid_ppu__carousel-next">
-            <button><img src="./images/Arrow%204.png" alt="Следующий слайд"></button>
         </div>
     </div>
-    <h2 id="rigid_ppu__caption">ЖЁСТКИЙ ППУ</h2>
-    <p id="rigid_ppu__description">Закрытоячеистый ППУ, можно использовать как финишное покрытие, но только при
-        использовании качественных компонентов.
-        Мы рекомендуем избегать всевозможные "самовары" и применять только качественные ППУ.
-        <br>
-        <br>
-        Тем не менее поверхность необходимо защитить от ультрафиолета (покраска / штукатурка).
-        Многие спрашивают, как долго ППУ может простоять под солнцем, отвечаем — за пару
-        лет деградирует наружный слой 1-2 мм, далее процесс деградации затрудняется наличием корки.
-        <br>
-        <br>
-        Жесткий ППУ идеален при утеплении пола, цоколя, не дышащих стен, металлических конструкций.</p>
-    <button id="rigid_ppu__calculate"><img src="./images/calculator2.png" alt="Калькулятор">Рассчитать цену</button>
 </section>
-<section id="quiz">
-    <div id="quiz__content">
-        <div id="quiz__caption">
-            <p><b>Рассчитайте стоимость</b><br>утепления ППУ <span>за 1 минуту</span></p>
+<section class="fast_calculate">
+    <div class="fast_calculate__container">
+        <div class="fast_calculate__content">
+            <p class="fast_calculate__caption">
+                Узнайте стоимость утепления <br>
+                <img src="./images/arrow_down.png" alt="Стрелочка вниз">
+                Вашего объекта
+                <img src="./images/arrow_down.png" alt="Стрелочка вниз">
+            </p>
+            <button class="fast_calculate__button">
+                <img src="./images/calculator_in_hand.png" alt="Калькулятор в руке">
+                Получить быстрый расчёт
+            </button>
+        </div>
+    </div>
+</section>
+<section class="rigid_ppu">
+    <div class="rigid_ppu__container">
+        <div class="swiper" id="rigid_ppu__carousel">
+            <div class="swiper-wrapper" id="rigid_ppu__carousel-wrapper">
+                <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_1.jpg"
+                                                                         alt="Изображение 1"></div>
+                <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_2.jpg"
+                                                                         alt="Изображение 2"></div>
+                <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_3.jpg"
+                                                                         alt="Изображение 3"></div>
+                <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_4.jpg"
+                                                                         alt="Изображение 4"></div>
+            </div>
+            <div class="swiper-pagination" id="rigid_ppu__carousel-pagination"></div>
+            <button class="swiper-button-next" id="rigid_ppu__carousel-prev"><img src="./images/rigid_ppu_arrow_gallery.svg" alt="Следующий слайд"></button>
+            <button class="swiper-button-next" id="rigid_ppu__carousel-next"><img src="./images/rigid_ppu_arrow_gallery.svg" alt="Следующий слайд"></button>
+        </div>
+        <h2 class="rigid_ppu__caption">ЖЁСТКИЙ ППУ</h2>
+        <div class="rigid_ppu__description">
+            <p> Закрытоячеистый ППУ, можно использовать как финишное покрытие, но только при
+                использовании качественных компонентов. Мы рекомендуем избегать всевозможные "самовары"
+                и применять только качественные ППУ.</p>
+            <p>Тем не менее поверхность необходимо защитить от ультрафиолета (покраска / штукатурка).
+            Многие спрашивают, как долго ППУ может простоять под солнцем, отвечаем — за пару
+            лет деградирует наружный слой 1-2 мм, далее процесс деградации затрудняется наличием корки.</p>
+            <p>Жесткий ППУ идеален при утеплении пола, цоколя, не дышащих стен, металлических конструкций.</p>
+        </div>
+        <button class="rigid_ppu__calculate"><img src="./images/calculator2.png" alt="Калькулятор">Рассчитать цену</button>
+    </div>
+</section>
+<section class="quiz">
+    <div class="quiz__container">
+        <div class="quiz__caption quiz-caption">
+            <p class="quiz-caption__text">Рассчитайте стоимость<br><span>утепления ППУ</span> <b>за 1 минуту</b></p>
             <img src="./images/sand_clock.png" alt="Песочные часы">
         </div>
-        <p id="quiz__description">
+        <p class="quiz__description">
             Ответьте на 7 вопросов - получите <br> тепловизионное обследование <br>
             <b>БЕСПЛАТНО.</b>
         </p>
-        <p id="quiz__send-price">
+        <p class="quiz__send-price">
             Прайс отправим на <span style="color: #8EC200; font-weight: 800">WhatsApp</span><br>
             или перезвоним когда удобно!
         </p>
-        <button id="quiz__calculate"><img src="./images/calculator3.png" alt="Рассчитать стоимость">Рассчитать стоимость
-        </button>
+        <button class="quiz__calculate"><img src="./images/calculator3.png" alt="Рассчитать стоимость">Рассчитать стоимость</button>
     </div>
 </section>
 <section id="faq">
@@ -478,29 +481,6 @@
         </div>
     </div>
     <div id="work_gallery__second" class="swiper">
-        <div class="swiper-wrapper" id="work_gallery__second-wrapper">
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-1.jpg" alt="Изображение 1">
-            </div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-2.jpg" alt="Изображение 2">
-            </div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-3.jpg" alt="Изображение 3">
-            </div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-4.jpg" alt="Изображение 4">
-            </div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/slide-5.jpg" alt="Изображение 5">
-            </div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_1.jpg"
-                                                                      alt="Изображение 6"></div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_2.jpg"
-                                                                      alt="Изображение 7"></div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_1.jpg"
-                                                                      alt="Изображение 8"></div>
-            <div class="swiper-slide work_gallery__second-slide"><img src="./images/carousel_image_2.jpg"
-                                                                      alt="Изображение 9"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 </section>
 <section id="thermal_survey">

@@ -83,31 +83,27 @@ $(document).ready(function () {
             }
         });
 
-        const swiperWorkSecond = new Swiper('#work_gallery__second', {
-            slidesPerView: 2,
-            loop: true,
-            spaceBetween: 30,
-            pagination: {
-                el: '#rigid_ppu__carousel-pagination',
-                clickable: true
-            },
-            navigation: {
-                nextEl: '#rigid_ppu__carousel-next',
-                prevEl: '#rigid_ppu__carousel-prev',
-            }
-        });
-
         const swiperRigidPpu = new Swiper('#rigid_ppu__carousel', {
-            slidesPerView: 2,
+            slidesPerView: 1,
             loop: true,
-            spaceBetween: 30,
+            spaceBetween: 20,
             pagination: {
-                el: '#rigid_ppu__carousel-pagination',
+                el: '.swiper-pagination',
                 clickable: true
             },
             navigation: {
-                nextEl: '#rigid_ppu__carousel-next',
-                prevEl: '#rigid_ppu__carousel-prev',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                481: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                }
             }
         });
 
