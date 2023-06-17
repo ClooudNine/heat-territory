@@ -41,7 +41,7 @@
     </div>
     <div class="header__contacts">
         <div class="header__telephone">
-            <img src="./images/phone.png" alt="Номер телефона">
+            <img src="./images/phone.svg" alt="Номер телефона">
             <div>
                 <p class="header__number">+7(499)40-40-747</p>
                 <p class="header__working-hours">Мы на связи: 8:00 - 18:00</p>
@@ -266,8 +266,8 @@
 </section>
 <section class="rigid_ppu">
     <div class="rigid_ppu__container">
-        <div class="swiper" id="rigid_ppu__carousel">
-            <div class="swiper-wrapper" id="rigid_ppu__carousel-wrapper">
+        <div class="swiper rigid_ppu__carousel">
+            <div class="swiper-wrapper rigid_ppu__carousel-wrapper">
                 <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_1.jpg"
                                                                          alt="Изображение 1"></div>
                 <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_2.jpg"
@@ -277,10 +277,10 @@
                 <div class="swiper-slide rigid_ppu__carousel-slide"><img src="./images/carousel_image_4.jpg"
                                                                          alt="Изображение 4"></div>
             </div>
-            <div class="swiper-pagination" id="rigid_ppu__carousel-pagination"></div>
-            <button class="swiper-button-next" id="rigid_ppu__carousel-prev"><img
+            <div class="swiper-pagination rigid_ppu__carousel-pagination"></div>
+            <button class="swiper-button-next rigid_ppu__carousel-prev"><img
                     src="./images/rigid_ppu_arrow_gallery.svg" alt="Следующий слайд"></button>
-            <button class="swiper-button-next" id="rigid_ppu__carousel-next"><img
+            <button class="swiper-button-next rigid_ppu__carousel-next"><img
                     src="./images/rigid_ppu_arrow_gallery.svg" alt="Следующий слайд"></button>
         </div>
         <h2 class="rigid_ppu__caption">ЖЁСТКИЙ ППУ</h2>
@@ -316,205 +316,275 @@
         </button>
     </div>
 </section>
-<section id="faq">
-    <h2 id="faq__caption"><img src="./images/thinking_face.png" alt="Часто задаваемые вопросы">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
-    </h2>
-    <div id="faq__answers-column_first">
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
+<section class="faq">
+    <div class="faq__container">
+        <h2 class="faq__caption"><img src="./images/thinking_face.png" alt="Часто задаваемые вопросы">ЧАСТО ЗАДАВАЕМЫЕ
+            ВОПРОСЫ
+        </h2>
+        <div class="faq__answers-column faq__answers-column-first">
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
-            </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
-            </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
-            </div>
-        </div>
-    </div>
-    <div id="faq__answers-column_second">
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
-            </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
+        <div class="faq__answers-column faq__answers-column-second">
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
-            </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
-                <button class="accordion-header__button"><img src="./images/subtract.png" alt="Показать/скрыть ответ">
-                </button>
-            </div>
-            <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
-                А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
-                монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
-                как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в 1/3,
-                после 1/5, 1/7 и так далее, чем дальше тем страшнее
+            <div class="accordion-item">
+                <div class="accordion-header"><span>01.&nbsp;</span>Сколько минваты заменяет?
+                    <button class="accordion-header__button"><img src="./images/subtract.png"
+                                                                  alt="Показать/скрыть ответ">
+                    </button>
+                </div>
+                <div>Ну вообще не совсем корректно так сравнивать, но 5см ППУ заменяет 28 см дерева.
+                    А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
+                    монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
+                    как минимум в местах стыков с направляющими например. Там конденсируется влага,
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    1/3,
+                    после 1/5, 1/7 и так далее, чем дальше тем страшнее
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section id="work_gallery">
-    <h2 id="work_gallery__caption"><img src="./images/camera.png" alt="Некоторые наши работы">НЕКОТОРЫЕ НАШИ РАБОТЫ</h2>
-    <div id="work_gallery__first" class="swiper">
-        <div class="swiper-wrapper" id="work_gallery__first-wrapper">
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-1.jpg" alt="Изображение 1">
+<section class="work_gallery">
+    <div class="work_gallery__container">
+        <div class="work_gallery__top-cloud"></div>
+        <div class="work_gallery__background"></div>
+        <h2 class="work_gallery__caption"><img src="./images/camera.png" alt="Некоторые наши работы">НЕКОТОРЫЕ НАШИ
+            РАБОТЫ</h2>
+        <div class="work_gallery__containers work_gallery__first-container">
+            <button class="swiper-button-prev work_gallery__navigation work_gallery__first-prev"><img
+                    src=./images/work-gallery-arrow.svg alt="Слайд влево"></button>
+            <div class="swiper work_gallerys work_gallery__first">
+                <div class="swiper-wrapper work_gallery__first-wrapper">
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/slide-1.jpg"
+                            alt="Изображение 1"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/slide-2.jpg"
+                            alt="Изображение 2"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/slide-3.jpg"
+                            alt="Изображение 3"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/slide-4.jpg"
+                            alt="Изображение 4"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/slide-5.jpg"
+                            alt="Изображение 5"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/carousel_image_1.jpg"
+                            alt="Изображение 6"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/carousel_image_2.jpg"
+                            alt="Изображение 7"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/carousel_image_1.jpg"
+                            alt="Изображение 8"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__first-slide"><img
+                            src="./images/carousel_image_2.jpg"
+                            alt="Изображение 9"></div>
+                </div>
+                <div class="swiper-pagination work_gallery__pagination work_gallery__first-pagination"></div>
             </div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-2.jpg" alt="Изображение 2">
-            </div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-3.jpg" alt="Изображение 3">
-            </div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-4.jpg" alt="Изображение 4">
-            </div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/slide-5.jpg" alt="Изображение 5">
-            </div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_1.jpg"
-                                                                     alt="Изображение 6"></div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_2.jpg"
-                                                                     alt="Изображение 7"></div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_1.jpg"
-                                                                     alt="Изображение 8"></div>
-            <div class="swiper-slide work_gallery__first-slide"><img src="./images/carousel_image_2.jpg"
-                                                                     alt="Изображение 9"></div>
+            <button class="swiper-button-next work_gallery__navigation work_gallery__first-next"><img
+                    src=./images/work-gallery-arrow.svg
+                    alt="Слайд вправо"></button>
         </div>
-        <div class="swiper-pagination" id="work_gallery__first-pagination"></div>
-        <div class="swiper-button-prev" id="work_gallery__first-prev">
-            <button><img src=./images/arrow_for_gallery.png alt="Слайд влево"></button>
+        <div class="work_gallery__containers work_gallery__second-container">
+            <button class="swiper-button-prev work_gallery__navigation work_gallery__second-prev"><img
+                    src=./images/work-gallery-arrow.svg alt="Слайд влево"></button>
+            <div class="swiper work_gallerys work_gallery__second">
+                <div class="swiper-wrapper work_gallery__second-wrapper">
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/slide-1.jpg"
+                            alt="Изображение 1"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/slide-2.jpg"
+                            alt="Изображение 2"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/slide-3.jpg"
+                            alt="Изображение 3"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/slide-4.jpg"
+                            alt="Изображение 4"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/slide-5.jpg"
+                            alt="Изображение 5"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/carousel_image_1.jpg"
+                            alt="Изображение 6"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/carousel_image_2.jpg"
+                            alt="Изображение 7"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/carousel_image_1.jpg"
+                            alt="Изображение 8"></div>
+                    <div class="swiper-slide work_gallery__slide work_gallery__second-slide"><img
+                            src="./images/carousel_image_2.jpg"
+                            alt="Изображение 9"></div>
+                </div>
+                <div class="swiper-pagination work_gallery__pagination work_gallery__second-pagination"></div>
+            </div>
+            <button class="swiper-button-next work_gallery__navigation work_gallery__second-next"><img
+                    src=./images/work-gallery-arrow.svg
+                    alt="Слайд вправо"></button>
         </div>
-        <div class="swiper-button-next" id="work_gallery__first-next">
-            <button><img src=./images/arrow_for_gallery.png alt="Слайд вправо"></button>
-        </div>
-    </div>
-    <div id="work_gallery__second" class="swiper">
     </div>
 </section>
 <section class="thermal_survey">
     <div class="thermal_survey__container">
         <h2 class="thermal_survey__caption">
-            <img src="./images/thermometer.png" alt="Теплотехническое обследование">ТЕПЛОТЕХНИЧЕСКОЕ<br>ОБСЛЕДОВАНИЕ
+            <img src="./images/thermometer.png" alt="Теплотехническое обследование">ТЕПЛОТЕХНИ&shy;ЧЕСКОЕ<br>ОБСЛЕДОВАНИЕ
         </h2>
         <div class="thermal_survey__description">
             <p>Перед началом работ, мы <b>обязательно проводим теплотехническое обследование</b> <b
-                    style="color: #61B4FF">БЕСПЛАТНО</b>.
-            </p>
+                    style="color: #61B4FF">БЕСПЛАТНО</b>.</p>
             <p>
                 Это позволяет точно определить зоны, где утепление необходимо в первую очередь, а также понять — как
                 максимально выгодно снизить энергозатраты.
             </p>
             <p>А <b>обследование тепловизором</b> Вы получаете <b>в подарок.</b></p>
         </div>
-        <div class="thermal_survey__form">
-            <div class="thermal_survey__form-free">Free</div>
-            <p class="thermal_survey__form-caption">Забронируйте теплотехническое обследование <b>БЕСПЛАТНО</b></p>
-            <form class="thermal_survey__form-telephone">
-                <label for="phone_2">Телефон * <small style="color: #CBCBCB">Введите телефон для связи</small></label>
-                <input type="tel" id="phone_2" name="phone_2" pattern="[0-9]{10}" required>
-                <button type="submit">Получить быстрый расчёт</button>
-            </form>
-            <div class="thermal_survey__form-note">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку
-                персональных
-                данных</a></div>
-        </div>
+        <form class="thermal_survey__form thermal_survey-form">
+            <div class="thermal_survey-form__free-stick">Free</div>
+            <p class="thermal_survey-form__caption">Забронируйте теплотехническое обследование <b>БЕСПЛАТНО</b></p>
+            <label for="phone_second">Телефон * <small style="color: #CBCBCB">Введите телефон для связи</small></label>
+            <input type="tel" id="phone_second" name="phone_second" pattern="[0-9]{10}" required>
+            <button type="submit">Получить быстрый расчёт</button>
+            <p class="thermal_survey-form__note">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
+        </form>
     </div>
 </section>
 <section class="contacts">
@@ -555,7 +625,7 @@
                 <img src="./images/house_before.png" class="gallery__img" alt="Изображение 5">
             </div>
             <div class="acquaintance__gallery-item gallery__item--6">
-                <img src="./images/gallery_photo_6.png" class="gallery__img" alt="Изображение 6">
+                <img src="images/gallery_photo_5.png" class="gallery__img" alt="Изображение 6">
             </div>
             <div class="acquaintance__gallery-item gallery__item--7">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 7">
@@ -584,10 +654,10 @@
             <p>© 2023 "Территория Тепла"</p>
         </div>
         <div class="footer__links">
-            <p>Утепление ППУ цена</p>
-            <p>Наши работы</p>
-            <p>Контакты</p>
-            <p>Расчёт стоимости</p>
+            <a href="#">Утепление ППУ цена</a>
+            <a href="#">Наши работы</a>
+            <a href="#">Контакты</a>
+            <a href="#">Расчёт стоимости</a>
         </div>
         <div class="footer__address footer-address">
             <div class="footer-address__item">

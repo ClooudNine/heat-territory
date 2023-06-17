@@ -68,32 +68,18 @@ $(document).ready(function () {
 
         // Галерея изображений
 
-        const swiperWorkFirst = new Swiper('#work_gallery__first', {
-            slidesPerView: 3,
+        const swiperWorkFirst = new Swiper('.work_gallery__first', {
+            slidesPerView: 1,
             centeredSlides: true,
             loop: true,
             spaceBetween: 30,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.work_gallery__first-pagination',
                 clickable: true
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-
-        const swiperRigidPpu = new Swiper('#rigid_ppu__carousel', {
-            slidesPerView: 1,
-            loop: true,
-            spaceBetween: 20,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.work_gallery__first-next',
+                prevEl: '.work_gallery__first-prev',
             },
             breakpoints: {
                 481: {
@@ -101,8 +87,48 @@ $(document).ready(function () {
                     spaceBetween: 40,
                 },
                 1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 70
+                }
+            }
+        });
+
+        const swiperWorkSecond = new Swiper('.work_gallery__second', {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.work_gallery__second-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.work_gallery__second-next',
+                prevEl: '.work_gallery__second-prev',
+            },
+            breakpoints: {
+                481: {
                     slidesPerView: 2,
-                    spaceBetween: 80
+                    spaceBetween: 70,
+                },
+            }
+        });
+
+        const swiperRigidPpu = new Swiper('.rigid_ppu__carousel', {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 20,
+            pagination: {
+                el: '.rigid_ppu__carousel-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.rigid_ppu__carousel-next',
+                prevEl: '.rigid_ppu__carousel-prev',
+            },
+            breakpoints: {
+                481: {
+                    slidesPerView: 2,
+                    spaceBetween: 80,
                 }
             }
         });

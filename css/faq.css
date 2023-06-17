@@ -1,61 +1,63 @@
-#faq {
-    margin-top: 150px;
-    display: grid;
-    grid-template-rows: 5vh auto;
-    grid-template-columns: 15vw 35vw 35vw 15vw;
-    gap: 40px 30px;
+.faq {
+    background: linear-gradient(360deg, #CCE6FC 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+    padding-top: 7vw;
 }
 
-#faq__caption {
+.faq__container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5vw auto;
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    gap: 2vw 2vw;
+}
+
+.faq__caption {
     grid-row: 1/1;
     grid-column: 2/4;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1.5vw;
     font-family: 'Intro', sans-serif;
     font-size: 2vw;
 }
 
-#faq__caption > img {
-    height: 100%;
+.faq__caption > img {
+    width: 5%;
 }
 
-#faq__answers-column_first {
+.faq__answers-column {
     grid-row: 2/2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.faq__answers-column-first {
     grid-column: 2/2;
-    display: flex;
-    flex-direction: column;
-    gap: 20px 0;
 }
 
-#faq__answers-column_second {
-    grid-row: 2/2;
+.faq__answers-column-second {
     grid-column: 3/3;
-    display: flex;
-    flex-direction: column;
-    gap: 20px 0;
 }
 
-#faq__answers-column_first .accordion-header, #faq__answers-column_second .accordion-header {
-    padding: 20px 15px 20px 15px;
+.accordion-header {
+    padding: 1.5vw 1vw;
     cursor: pointer;
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
-    color: #000000;
 }
 
-#faq__answers-column_first .ui-accordion-content, #faq__answers-column_second .ui-accordion-content  {
-    padding: 20px 10px 20px 10px;
+.ui-accordion-content  {
+    padding: 1vw 1vw 3vw 1vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8vw;
-    color: #000000;
 }
 
 .accordion-header__button {
-    height: 40px;
-    width: 40px;
+    height: 2.5vw;
+    width: 2.5vw;
     margin-left: auto;
     display: flex;
     justify-content: center;
@@ -67,7 +69,8 @@
 }
 
 .accordion-header__button > img {
-    margin-top: 3px;
+    width: 60%;
+    margin-top: 0.2vw;
     transition: 0.3s all;
 }
 
@@ -77,12 +80,61 @@
     border-radius: 10px;
 }
 
-#faq__answers-column_first .ui-accordion-header-active .accordion-header__button > img,
-#faq__answers-column_second .ui-accordion-header-active .accordion-header__button > img{
+.ui-accordion-header-active .accordion-header__button > img {
     transform: rotate(-180deg);
 }
 
-#faq__answers-column_first .ui-accordion-header-active > span,
-#faq__answers-column_second .ui-accordion-header-active > span {
+.ui-accordion-header-active > span {
     font-weight: bold;
+}
+
+@media screen and (max-width: 481px){
+    .faq {
+        background: linear-gradient(360deg, #CCE6FC 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        padding-top: 30vw;
+        margin-top: 30vw;
+    }
+
+    .faq__container {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-rows: 20vw auto;
+        grid-template-columns: 100%;
+        gap: 15vw;
+    }
+
+    .faq__caption {
+        grid-row: 1/1;
+        grid-column: 1/1;
+        gap: 6vw;
+        font-size: 7vw;
+    }
+
+    .faq__caption > img {
+        width: 20%;
+    }
+
+    .faq__answers-column-first {
+        display: none;
+    }
+
+    .faq__answers-column-second {
+        grid-column: 1/1;
+    }
+
+    .accordion-header {
+        padding: 3vw 2vw;
+        font-size: 4vw;
+    }
+
+    .ui-accordion-content  {
+        padding: 4vw 20vw 10vw 4vw;
+        font-size: 4vw;
+    }
+
+    .accordion-header__button {
+        height: 10vw;
+        width: 10vw;
+    }
+
 }

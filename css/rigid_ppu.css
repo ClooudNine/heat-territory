@@ -32,7 +32,7 @@
     right: -10%;
 }
 
-#rigid_ppu__carousel {
+.rigid_ppu__carousel {
     margin-left: -10%;
     padding: 2vw;
     grid-row: 2/-1;
@@ -40,7 +40,7 @@
     width: 100%;
 }
 
-#rigid_ppu__carousel-wrapper {
+.rigid_ppu__carousel-wrapper {
     height: 75%;
 }
 
@@ -58,12 +58,12 @@
     object-fit: cover;
 }
 
-#rigid_ppu__carousel-pagination  {
+.rigid_ppu__carousel-pagination  {
     left: 25%;
     top: 75%;
 }
 
-.swiper-pagination-bullet {
+.rigid_ppu__carousel-pagination .swiper-pagination-bullet {
     background: url("/images/rigid_ppu_bullet.svg");
 }
 
@@ -71,11 +71,11 @@
     background: url("/images/rigid_ppu_bullet_active.svg");
 }
 
-#rigid_ppu__carousel-next::after, #rigid_ppu__carousel-prev::after {
+.rigid_ppu__carousel-next::after, .rigid_ppu__carousel-prev::after {
     content: none;
 }
 
-#rigid_ppu__carousel-next, #rigid_ppu__carousel-prev {
+.rigid_ppu__carousel-next, .rigid_ppu__carousel-prev {
     width: 2.5vw;
     height: 2.5vw;
     top: 87%;
@@ -86,15 +86,15 @@
     border-radius: 50%;
 }
 
-#rigid_ppu__carousel-next > img, #rigid_ppu__carousel-prev > img {
+.rigid_ppu__carousel-next > img, .rigid_ppu__carousel-prev > img {
     width: 60%;
 }
 
-#rigid_ppu__carousel-prev {
+.rigid_ppu__carousel-prev {
     left: 67%;
 }
 
-#rigid_ppu__carousel-prev > img {
+.rigid_ppu__carousel-prev > img {
     transform: rotate(180deg);
 }
 
@@ -186,7 +186,7 @@
         padding: 5vw 7vw 0 7vw;
     }
 
-    #rigid_ppu__carousel {
+    .rigid_ppu__carousel {
         margin-left: 0;
         margin-top: 12vw;
         padding: 0;
@@ -209,19 +209,19 @@
         font-size: 4.5vw;
     }
 
-    #rigid_ppu__carousel-pagination  {
+    .rigid_ppu__carousel-pagination  {
         left: 2%;
         top: 78%;
     }
 
-    #rigid_ppu__carousel-next, #rigid_ppu__carousel-prev {
+    .rigid_ppu__carousel-next, .rigid_ppu__carousel-prev {
         width: 12vw;
         height: 12vw;
         top: 87%;
         left: 60%;
     }
 
-    #rigid_ppu__carousel-prev {
+    .rigid_ppu__carousel-prev {
         left: 30%;
     }
 }

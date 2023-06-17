@@ -14,11 +14,10 @@
     content: '';
     position: absolute;
     width: 40%;
-    height: 188%;
+    height: 185%;
     background: url("/images/contacts-left-bg.png") no-repeat top left;
-    background-size: cover;
-    bottom: 58%;
-    left: 0;
+    background-size: 100%;
+    bottom: 67%;
 }
 
 .contacts__main {
@@ -89,8 +88,7 @@
 
 @media screen and (max-width: 481px) {
     .contacts {
-        position: relative;
-        margin-top: 8vw;
+        margin-top: 50vw;
     }
 
     .contacts__container {
@@ -105,9 +103,9 @@
         position: absolute;
         background-position: top center;
         background-size: cover;
-        width: 135%;
-        height: 75%;
-        bottom: 83%;
+        width: 150%;
+        height: 90%;
+        bottom: 70%;
         left: 0;
     }
 
