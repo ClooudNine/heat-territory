@@ -12,6 +12,47 @@ button {
     cursor: pointer;
 }
 
+.orange-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 0 #E0A829, 3px 4px 10px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
+    border-radius: 10px;
+    transition: 0.5s all;
+    position: relative;
+    overflow-x: clip;
+    color: #531E00;
+}
+
+.orange-button:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.61) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 0 #E0A829, 3px 4px 35px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
+    border-radius: 10px;
+}
+
+.flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-30deg);
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 2s infinite linear;
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

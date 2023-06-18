@@ -1,6 +1,6 @@
 .space_insulation {
     position: relative;
-    margin-top: -15%;
+    margin-top: -14vw;
 }
 
 .space_insulation__container {
@@ -70,23 +70,18 @@
 }
 
 .space_insulation__calculate {
+    z-index: 1;
     grid-row: 4/4;
     grid-column: 2/2;
     place-self: center stretch;
     position: relative;
     height: 50%;
-    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 3px 0 #E0A829, 3px 4px 10px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
-    border-radius: 1vw;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
     font-size: 1.2vw;
-    color: #531E00;
     text-shadow: 0 0 4px #FFFBEE;
 }
 
 .space_insulation__calculate > img {
+    z-index: 1;
     position: absolute;
     height: 170%;
     bottom: -35%;
@@ -112,7 +107,7 @@
     }
 
     .space_insulation__container::after {
-       display: none;
+        display: none;
     }
 
     .space_insulation__caption {
@@ -135,7 +130,6 @@
         border-radius: 4vw;
         width: 85%;
         margin: 0 auto;
-        padding: 5% 3%;
     }
 
     .space_insulation__description > p {
