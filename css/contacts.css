@@ -67,14 +67,7 @@
 .contacts__main-button {
     width: 80%;
     height: 14%;
-    background: linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 3px 0 #E0A829, 3px 4px 10px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
     font-size: 1vw;
-    color: #531E00;
 }
 
 #contacts__map {
@@ -94,13 +87,11 @@
     .contacts__container {
         width: 90%;
         margin: 0 auto;
-        grid-template-rows: 120vw 120vw;
+        grid-template-rows: 140vw 120vw;
         grid-template-columns: 100%;
     }
 
     .contacts__container::before {
-        content: '';
-        position: absolute;
         background-position: top center;
         background-size: cover;
         width: 150%;
@@ -111,8 +102,6 @@
 
     .contacts__main {
         grid-column: 1/1;
-        padding-left: 3vw;
-        gap: 1vw;
     }
 
     .contacts__main-caption {
@@ -143,16 +132,7 @@
     }
 
     #contacts__map {
-        width: 100%;
         grid-row: 2/2;
-        z-index: 1;
-        margin-left: 0;
-        margin-top: -10vw;
+        margin: -10vw 0 0 0;
     }
-
-    .ymaps-map {
-        width: 100%;
-        height: 100% !important;
-    }
-
 }

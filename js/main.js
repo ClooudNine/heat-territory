@@ -128,7 +128,11 @@ $(document).ready(function () {
             breakpoints: {
                 481: {
                     slidesPerView: 2,
-                    spaceBetween: 80,
+                    spaceBetween: 40,
+                },
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
                 }
             }
         });

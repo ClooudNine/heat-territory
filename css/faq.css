@@ -8,7 +8,7 @@
     display: grid;
     grid-template-rows: 5vw auto;
     grid-template-columns: 15vw 35vw 35vw 15vw;
-    gap: 2vw 2vw;
+    gap: 2vw;
 }
 
 .faq__caption {
@@ -41,7 +41,7 @@
 }
 
 .accordion-header {
-    padding: 1.5vw 1vw;
+    padding: 1.2vw 1vw;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -66,6 +66,12 @@
     box-shadow: 0 1px 0 #E0A829, 0 4px 7px #FFCC40;
     border-radius: 50%;
     border: none;
+    transition: 0.3s all;
+}
+
+.accordion-header__button:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.61) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(269deg, #FFBE16 -7.63%, rgba(255, 255, 255, 0) 104.12%), #FFD43B;
+    box-shadow: 0 3px 0 #E0A829, 3px 4px 35px #FFCC40, 0 0 13px rgba(255, 190, 22, 0.5);
 }
 
 .accordion-header__button > img {
@@ -90,7 +96,6 @@
 
 @media screen and (max-width: 481px){
     .faq {
-        background: linear-gradient(360deg, #CCE6FC 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
         padding-top: 30vw;
         margin-top: 30vw;
     }
@@ -98,13 +103,12 @@
     .faq__container {
         width: 90%;
         margin: 0 auto;
-        grid-template-rows: 20vw auto;
+        grid-template-rows: auto auto;
         grid-template-columns: 100%;
-        gap: 15vw;
+        gap: 12vw;
     }
 
     .faq__caption {
-        grid-row: 1/1;
         grid-column: 1/1;
         gap: 6vw;
         font-size: 7vw;
@@ -120,6 +124,7 @@
 
     .faq__answers-column-second {
         grid-column: 1/1;
+        gap: 5vw;
     }
 
     .accordion-header {

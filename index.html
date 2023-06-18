@@ -6,7 +6,7 @@
     <meta name="description" content="Сайт компании 'Территория тепла'. Утепление напыляемым ППУ.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -28,8 +28,7 @@
     <title>Территория тепла</title>
     <script src="./js/libraries/jquery-3.7.0.min.js"></script>
     <script src="./js/libraries/jquery-ui.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=cb3ff779-35e2-480e-981a-87e8bacb211c&load=package.standard&lang=ru-RU"
-            type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=cb3ff779-35e2-480e-981a-87e8bacb211c&load=package.standard&lang=ru-RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
@@ -78,15 +77,17 @@
         </div>
     </div>
 </main>
-<section class="guarantees">
+<div class="guarantees">
     <div class="guarantees__container">
         <div class="guarantees__item">
             <img src="./images/warranty.png" alt="Гарантия 30 лет, но мы страхуемся">
             <p class="caption_warranty">Гарантия 30 лет,<br> но мы страхуемся</p>
-            <p class="description_warranty">Чтобы всё было честно, уже этой зимой проведем обследование тепловизором,
+            <p class="description_warranty">
+                Чтобы всё было честно, уже этой зимой проведем обследование тепловизором,
                 и <b> устраним все недостатки </b> мосты холода <b> за свой счёт. </b>
                 Реальный срок эксплуатации ППУ более 70 лет (может и больше).
-                Ведь он не разлагается и не крошится - вообще. </p>
+                Ведь он не разлагается и не крошится - вообще.
+            </p>
         </div>
         <div class="guarantees__item">
             <img src="./images/best_materials.png" alt="Лучшие материалы - гарантия экологичности">
@@ -105,14 +106,12 @@
                 Настолько мы уверенны в качестве!</p>
         </div>
     </div>
-</section>
+</div>
 <section class="space_insulation">
     <div class="space_insulation__container">
-        <h1 class="space_insulation__caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h1>
+        <h2 class="space_insulation__caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h2>
         <div class="space_insulation__description">
-            <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в
-                космической
-                промышленности.
+            <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в космической промышленности.
                 В частности, Советский космический корабль многоразового использования Буран был утеплен ППУ. </p>
             <br>
             <p>Минимальный слой - максимальная энергоэффективность.</p>
@@ -122,8 +121,7 @@
         </div>
         <img class="space_insulation__differences" src="./images/blocks_stat.png" alt="Различия кирпичей и ППУ">
         <button class="space_insulation__calculate orange-button"><img src="./images/calculator.png" alt="Калькулятор">
-            Рассчитать
-            цену утепления
+            Рассчитать цену утепления
             <span class="flare"></span>
         </button>
     </div>
@@ -191,7 +189,7 @@
     <div class="insulated_objects__container">
         <div class="insulated_objects__caption">
             <img src="./images/heart.png" alt="Сердце">
-            <p>УТЕПЛЯЕМ&nbsp;<span>ЛЮБЫЕ&nbsp;</span>ОБЪЕКТЫ</p>
+            <h2>УТЕПЛЯЕМ&nbsp;<span>ЛЮБЫЕ&nbsp;</span>ОБЪЕКТЫ</h2>
         </div>
         <div class="insulated_objects__box">
             <div class="insulated_objects__item">
@@ -215,23 +213,24 @@
         </div>
     </div>
 </section>
-<section class="phone_form">
+<div class="phone_form">
     <div class="phone_form__container">
         <div class="phone_form__description">
             <img class="phone_form__engineer" src="./images/engineer.png" alt="Инженер">
-            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в
-                WhatsApp</p>
+            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в WhatsApp</p>
             <div class="phone_form__arrow"><img src="./images/phone_form_arrow.svg" alt="Стрелка вправо"></div>
         </div>
         <form class="phone_form__main">
             <label for="phone">Телефон * <small>Введите телефон для связи</small></label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10,14}" required>
-            <button class="phone_form__submit" type="submit"><img src="./images/whatsapp.png"
-                                                                  alt="Получить консультацию">Получить консультацию
+            <button class="phone_form__submit orange-button" type="submit">
+                <img src="./images/whatsapp.png" alt="Получить консультацию">
+                Получить консультацию
+                <span class="flare"></span>
             </button>
         </form>
     </div>
-</section>
+</div>
 <section class="before_and_after">
     <div class="before_and_after__container">
         <h2 class="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
@@ -240,48 +239,49 @@
             <div class="before_and_after-pictures__item" id="before_and_after-pictures__first">
                 <div>до</div>
                 <div class="view view-after" id="view-after-first">
-                    <img src="./images/house_before.png" alt="До"/>
+                    <img src="./images/house_before.png" alt="До">
                 </div>
                 <div class="view view-before">
-                    <img src="./images/house_after.png" alt="После"/>
+                    <img src="./images/house_after.png" alt="После">
                 </div>
                 <div class="drag" id="drag-first">
-                    <img class="dr-circle" src="./images/drag.png" alt="Круг">
+                    <img class="dr-circle" src="./images/circle_before_and_after.svg" alt="Круг">
                 </div>
                 <div>после</div>
             </div>
             <div class="before_and_after-pictures__item" id="before_and_after-pictures__second">
                 <div>до</div>
                 <div class="view view-after" id="view-after-second">
-                    <img src="./images/house_before.png" alt="До"/>
+                    <img src="./images/house_before.png" alt="До">
                 </div>
                 <div class="view view-before">
-                    <img src="./images/house_after.png" alt="После"/>
+                    <img src="./images/house_after.png" alt="После">
                 </div>
                 <div class="drag" id="drag-second">
-                    <img class="dr-circle" src="./images/drag.png" alt="Круг">
+                    <img class="dr-circle" src="./images/circle_before_and_after.svg" alt="Круг">
                 </div>
                 <div>после</div>
             </div>
         </div>
     </div>
 </section>
-<section class="fast_calculate">
+<div class="fast_calculate">
     <div class="fast_calculate__container">
         <div class="fast_calculate__content">
             <p class="fast_calculate__caption">
                 Узнайте стоимость утепления <br>
-                <img src="./images/arrow_down.png" alt="Стрелочка вниз">
+                <img src="./images/fast_calculate_text_arrow.svg" alt="Стрелочка вниз">
                 Вашего объекта
-                <img src="./images/arrow_down.png" alt="Стрелочка вниз">
+                <img src="./images/fast_calculate_text_arrow.svg" alt="Стрелочка вниз">
             </p>
-            <button class="fast_calculate__button">
-                <img src="./images/calculator_in_hand.png" alt="Калькулятор в руке">
+            <img class="fast_calculate__calculator" src="./images/calculator_in_hand.png" alt="Калькулятор в руке">
+            <button class="fast_calculate__button orange-button">
                 Получить быстрый расчёт
+                <span class="flare"></span>
             </button>
         </div>
     </div>
-</section>
+</div>
 <section class="rigid_ppu">
     <div class="rigid_ppu__container">
         <div class="swiper rigid_ppu__carousel">
@@ -311,14 +311,17 @@
                 лет деградирует наружный слой 1-2 мм, далее процесс деградации затрудняется наличием корки.</p>
             <p>Жесткий ППУ идеален при утеплении пола, цоколя, не дышащих стен, металлических конструкций.</p>
         </div>
-        <button class="rigid_ppu__calculate"><img src="./images/calculator2.png" alt="Калькулятор">Рассчитать цену
+        <button class="rigid_ppu__calculate">
+            <img src="./images/calculator2.png" alt="Калькулятор">
+            Рассчитать цену
+            <span class="flare"></span>
         </button>
     </div>
 </section>
 <section class="quiz">
     <div class="quiz__container">
         <div class="quiz__caption quiz-caption">
-            <p class="quiz-caption__text">Рассчитайте стоимость<br><span>утепления ППУ</span> <b>за 1 минуту</b></p>
+            <h2 class="quiz-caption__text">Рассчитайте стоимость<br><span>утепления ППУ</span> <b>за 1 минуту</b></h2>
             <img src="./images/sand_clock.png" alt="Песочные часы">
         </div>
         <p class="quiz__description">
@@ -329,8 +332,10 @@
             Прайс отправим на <span style="color: #8EC200; font-weight: 800">WhatsApp</span><br>
             или перезвоним когда удобно!
         </p>
-        <button class="quiz__calculate"><img src="./images/calculator3.png" alt="Рассчитать стоимость">Рассчитать
-            стоимость
+        <img class="quiz__calculator" src="./images/calculator3.png" alt="Рассчитать стоимость">
+        <button class="quiz__calculate orange-button">
+            Рассчитать стоимость
+            <span class="flare"></span>
         </button>
     </div>
 </section>
@@ -600,7 +605,7 @@
             <p class="thermal_survey-form__caption">Забронируйте теплотехническое обследование <b>БЕСПЛАТНО</b></p>
             <label for="phone_second">Телефон * <small style="color: #CBCBCB">Введите телефон для связи</small></label>
             <input type="tel" id="phone_second" name="phone_second" pattern="[0-9]{10}" required>
-            <button type="submit">Получить быстрый расчёт</button>
+            <button class="orange-button" type="submit">Получить быстрый расчёт<span class="flare"></span></button>
             <p class="thermal_survey-form__note">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку
                 персональных данных</a></p>
         </form>
@@ -617,49 +622,60 @@
                 </div>
                 <div class="contacts__main-info-item"><img src="./images/mail.png" alt="E-mail">info@ttppu.ru</div>
             </div>
-            <button class="contacts__main-button">Оставить заявку</button>
+            <button class="contacts__main-button orange-button">Оставить заявку<span class="flare"></span></button>
         </div>
         <div id="contacts__map"></div>
     </div>
 </section>
 <section class="acquaintance">
     <div class="acquaintance__container">
-        <h2 class="acquaintance__caption"><img src="./images/human_acquaintance.png" alt="Давайте познакомимся">ДАВАЙТЕ
+        <h2 class="acquaintance__caption"><img src="./images/human_acquaintance.svg" alt="Давайте познакомимся">ДАВАЙТЕ
             ПОЗНАКОМИМСЯ</h2>
         <div class="acquaintance__description">Посмотрите фото нашего рабочего процесса ниже</div>
         <div class="acquaintance__gallery">
             <div class="acquaintance__gallery-item gallery__item--1">
                 <img src="./images/gallery_photo_1.png" class="gallery__img" alt="Изображение 1">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--2">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 2">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--3">
                 <img src="./images/gallery_photo_3.png" class="gallery__img" alt="Изображение 3">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--4">
                 <img src="./images/gallery_photo_4.png" class="gallery__img" alt="Изображение 4">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--5">
                 <img src="./images/house_before.png" class="gallery__img" alt="Изображение 5">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--6">
                 <img src="images/gallery_photo_5.png" class="gallery__img" alt="Изображение 6">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--7">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 7">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--8">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 8">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--9">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 9">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--10">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 10">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
             <div class="acquaintance__gallery-item gallery__item--11">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 11">
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
             </div>
         </div>
         <div class="acquaintance__footer">Мы стараемся постоянно пополнять его :)</div>
