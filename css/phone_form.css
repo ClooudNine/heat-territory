@@ -1,6 +1,5 @@
 .phone_form {
     position: relative;
-    height: max-content;
     background: #FFFFFF;
     width: 100%;
     padding-top: 5vw;
@@ -30,6 +29,7 @@
 }
 
 .phone_form__description {
+    z-index: 1;
     grid-column: 1/1;
     place-self: center;
     height: 70%;
@@ -70,6 +70,7 @@
 }
 
 .phone_form__main {
+    z-index: 1;
     grid-column: 3/3;
     display: flex;
     gap: 1vw;
@@ -86,6 +87,8 @@
 }
 
 .phone_form__main > input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     background: #FFFFFF;
     border: 1px solid #CBCBCB;
     border-radius: 10px;

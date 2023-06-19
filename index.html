@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -30,9 +31,15 @@
     <script src="./js/libraries/jquery-ui.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=cb3ff779-35e2-480e-981a-87e8bacb211c&load=package.standard&lang=ru-RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./js/libraries/jquery.maskedinput.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
+<div id="preloader">
+    <img src="./images/header_logo.png" alt="Логотип 'Территория тепла'">
+    <span class="loader"></span>
+</div>
 <header class="header">
     <div class="header__logo">
         <img src="./images/header_logo.png" alt="Логотип 'Территория тепла'">
@@ -68,7 +75,8 @@
                 максимального снижения теплопотерь за наименьший бюджет</p>
         </div>
         <div class="main__footer">
-            <img class="main__men-with-thermal-imager" src="./images/men_with_thermal_imager.png" alt="Мужчина с тепловизором">
+            <img class="main__men-with-thermal-imager" src="./images/men_with_thermal_imager.png"
+                 alt="Мужчина с тепловизором">
             <button class="main__inspection orange-button">
                 Получить обследование
                 <span class="flare"></span>
@@ -92,7 +100,8 @@
         <div class="guarantees__item">
             <img src="./images/best_materials.png" alt="Лучшие материалы - гарантия экологичности">
             <p class="caption_warranty">Лучшие материалы - <br> гарантия экологичности</p>
-            <p class="description_warranty">Используем только материалы <b> проверенные временем компоненты </b> ППУ.
+            <p class="description_warranty">Используем только материалы <b> проверенные временем компоненты </b>
+                ППУ.
                 Lallafom, BASF, Huntsman, Ecotermix Premium.
                 Вы можете быть абсолютно спокойны в отношении экологичности материала.
                 ППУ - пожалуй самый экологичный материал. </p>
@@ -100,9 +109,11 @@
         <div class="guarantees__item">
             <img src="./images/compensation.png" alt="Полная компенсация финансовых издержек">
             <p class="caption_warranty">Полная компенсация <br> финансовых издержек</p>
-            <p class="description_warranty">Все гарантируют замену утеплителя в случае ошибки, но забывают про стоимость
+            <p class="description_warranty">Все гарантируют замену утеплителя в случае ошибки, но забывают про
+                стоимость
                 уже сделанного ремонта.
-                Мы же <b> берем на себя полные обязательства </b> по устранению недостатков, включая ремонт интерьера.
+                Мы же <b> берем на себя полные обязательства </b> по устранению недостатков, включая ремонт
+                интерьера.
                 Настолько мы уверенны в качестве!</p>
         </div>
     </div>
@@ -111,13 +122,15 @@
     <div class="space_insulation__container">
         <h2 class="space_insulation__caption">КОСМИЧЕСКИЙ <br> УТЕПЛИТЕЛЬ</h2>
         <div class="space_insulation__description">
-            <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в космической промышленности.
+            <p>На сегодняшний день ППУ — самый энергоэффективный утеплитель в мире. ППУ активно используется в
+                космической промышленности.
                 В частности, Советский космический корабль многоразового использования Буран был утеплен ППУ. </p>
             <br>
             <p>Минимальный слой - максимальная энергоэффективность.</p>
             <br>
             <p>ППУ– это негорючий и самый энергоэффективный утеплитель в мире. </p>
-            <p>8 см ППУ — 190 см кирпича! И это не шутка. <br>5 см ППУ — 15 см СУХОЙ минваты без стыков с деревом. </p>
+            <p>8 см ППУ — 190 см кирпича! И это не шутка. <br>5 см ППУ — 15 см СУХОЙ минваты без стыков с деревом.
+            </p>
         </div>
         <img class="space_insulation__differences" src="./images/blocks_stat.png" alt="Различия кирпичей и ППУ">
         <img class="space_insulation__calculator" src="./images/calculator.png" alt="Калькулятор">
@@ -140,7 +153,8 @@
                     Требует установки пароизоляционных мембран. </p>
                 <div class="price-item__cost">
                     <button class="price-item__details">Подробнее
-                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z"
                                   fill="#2F66B8"/>
                         </svg>
@@ -152,12 +166,14 @@
             <div class="price__item price-item">
                 <img src="./images/rigid_ppu.png" alt="Жёсткий ППУ (самый тёплый)">
                 <p class="price-item__caption">Жёсткий ППУ <br> (самый тёплый)</p>
-                <p class="price-item__description">Не требует установки дополнительных мембран, ложится ровным слоем.
+                <p class="price-item__description">Не требует установки дополнительных мембран, ложится ровным
+                    слоем.
                     Идеален для цоколей, стен, фундаментов. Часто применяется при внутренней теплоизоляции.
                     Возможно использовать под стяжкой.</p>
                 <div class="price-item__cost">
                     <button class="price-item__details">Подробнее
-                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z"
                                   fill="#2F66B8"/>
                         </svg>
@@ -174,7 +190,8 @@
                     Требует установки пароизоляционных мембран. </p>
                 <div class="price-item__cost">
                     <button class="price-item__details">Подробнее
-                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z"
                                   fill="#2F66B8"/>
                         </svg>
@@ -218,12 +235,14 @@
     <div class="phone_form__container">
         <div class="phone_form__description">
             <img class="phone_form__engineer" src="./images/engineer.png" alt="Инженер">
-            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте обсудим в WhatsApp</p>
+            <p class="phone_form__text">Погрузимся в вашу задачу и <b>решим</b> её <b>комплексно</b>, давайте
+                обсудим в WhatsApp</p>
             <div class="phone_form__arrow"><img src="./images/phone_form_arrow.svg" alt="Стрелка вправо"></div>
         </div>
         <form class="phone_form__main">
-            <label for="phone">Телефон * <small>Введите телефон для связи</small></label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,14}" required>
+            <label for="phone_first">Телефон * <small>Введите телефон для связи</small></label>
+            <input type="text" id="phone_first" class="phone_input" name="phone" placeholder="+7 (___) ___-__-__"
+                   required>
             <button class="phone_form__submit orange-button" type="submit">
                 <img src="./images/whatsapp.png" alt="Получить консультацию">
                 Получить консультацию
@@ -234,7 +253,8 @@
 </div>
 <section class="before_and_after">
     <div class="before_and_after__container">
-        <h2 class="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»</h2>
+        <h2 class="before_and_after__caption"><img src="./images/stars.png" alt="Звёзды"> УТЕПЛЕНИЕ «ДО» И «ПОСЛЕ»
+        </h2>
         <p class="before_and_after__description">так выглядит утепление мягким ППУ:</p>
         <div class="before_and_after__pictures before_and_after-pictures">
             <div class="before_and_after-pictures__item" id="before_and_after-pictures__first">
@@ -322,7 +342,8 @@
 <section class="quiz">
     <div class="quiz__container">
         <div class="quiz__caption quiz-caption">
-            <h2 class="quiz-caption__text">Рассчитайте стоимость<br><span>утепления ППУ</span> <b>за 1 минуту</b></h2>
+            <h2 class="quiz-caption__text">Рассчитайте стоимость<br><span>утепления ППУ</span> <b>за 1 минуту</b>
+            </h2>
             <img src="./images/sand_clock.png" alt="Песочные часы">
         </div>
         <p class="quiz__description">
@@ -342,7 +363,8 @@
 </section>
 <section class="faq">
     <div class="faq__container">
-        <h2 class="faq__caption"><img src="./images/thinking_face.png" alt="Часто задаваемые вопросы">ЧАСТО ЗАДАВАЕМЫЕ
+        <h2 class="faq__caption"><img src="./images/thinking_face.png" alt="Часто задаваемые вопросы">ЧАСТО
+            ЗАДАВАЕМЫЕ
             ВОПРОСЫ
         </h2>
         <div class="faq__answers-column faq__answers-column-first">
@@ -356,7 +378,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -371,7 +394,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -386,7 +410,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -401,7 +426,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -418,7 +444,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -433,7 +460,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -448,7 +476,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -463,7 +492,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -478,7 +508,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -493,7 +524,8 @@
                     А в сравненнии с минватой 13 см сухой минплиты и это без учета безшовности,
                     монолитности, и 100% адгезии. Но любой шовный утеплитель имеет мосты холода,
                     как минимум в местах стыков с направляющими например. Там конденсируется влага,
-                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это в
+                    и они со временем только увеличиваются (мосты холода). Поэтому, ответ таков: До первой зимы это
+                    в
                     1/3,
                     после 1/5, 1/7 и так далее, чем дальше тем страшнее
                 </div>
@@ -604,8 +636,10 @@
         <form class="thermal_survey__form thermal_survey-form">
             <div class="thermal_survey-form__free-stick">Free</div>
             <p class="thermal_survey-form__caption">Забронируйте теплотехническое обследование <b>БЕСПЛАТНО</b></p>
-            <label for="phone_second">Телефон * <small style="color: #CBCBCB">Введите телефон для связи</small></label>
-            <input type="tel" id="phone_second" name="phone_second" pattern="[0-9]{10}" required>
+            <label for="phone_second">Телефон * <small style="color: #CBCBCB">Введите телефон для
+                связи</small></label>
+            <input type="tel" id="phone_second" class="phone_input" name="phone_second"
+                   placeholder="+7 (___) ___-__-__" required>
             <button class="orange-button" type="submit">Получить быстрый расчёт<span class="flare"></span></button>
             <p class="thermal_survey-form__note">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку
                 персональных данных</a></p>
@@ -619,7 +653,8 @@
             <div class="contacts__main-info">
                 <div class="contacts__main-info-item"><img src="./images/city.svg" alt="Адрес">
                     <p>Одинцово, ул. Говорова 18А</div>
-                <div class="contacts__main-info-item"><img src="./images/telephone.png" alt="Телефон">8 (499) 40-40-747
+                <div class="contacts__main-info-item"><img src="./images/telephone.png" alt="Телефон">8 (499)
+                    40-40-747
                 </div>
                 <div class="contacts__main-info-item"><img src="./images/mail.png" alt="E-mail">info@ttppu.ru</div>
             </div>
@@ -634,49 +669,71 @@
             ПОЗНАКОМИМСЯ</h2>
         <div class="acquaintance__description">Посмотрите фото нашего рабочего процесса ниже</div>
         <div class="acquaintance__gallery">
-            <div class="acquaintance__gallery-item gallery__item--1">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_1.png"
+                 class="acquaintance__gallery-item gallery__item--1">
                 <img src="./images/gallery_photo_1.png" class="gallery__img" alt="Изображение 1">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--2">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_2.png"
+                 class="acquaintance__gallery-item gallery__item--2">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 2">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--3">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_3.png"
+                 class="acquaintance__gallery-item gallery__item--3">
                 <img src="./images/gallery_photo_3.png" class="gallery__img" alt="Изображение 3">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--4">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_4.png"
+                 class="acquaintance__gallery-item gallery__item--4">
                 <img src="./images/gallery_photo_4.png" class="gallery__img" alt="Изображение 4">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--5">
+            <div data-fancybox="gallery" data-src="./images/house_before.png"
+                 class="acquaintance__gallery-item gallery__item--5">
                 <img src="./images/house_before.png" class="gallery__img" alt="Изображение 5">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--6">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_5.png"
+                 class="acquaintance__gallery-item gallery__item--6">
                 <img src="images/gallery_photo_5.png" class="gallery__img" alt="Изображение 6">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--7">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_2.png"
+                 class="acquaintance__gallery-item gallery__item--7">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 7">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--8">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_2.png"
+                 class="acquaintance__gallery-item gallery__item--8">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 8">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--9">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_2.png"
+                 class="acquaintance__gallery-item gallery__item--9">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 9">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--10">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_2.png"
+                 class="acquaintance__gallery-item gallery__item--10">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 10">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
-            <div class="acquaintance__gallery-item gallery__item--11">
+            <div data-fancybox="gallery" data-src="./images/gallery_photo_2.png"
+                 class="acquaintance__gallery-item gallery__item--11">
                 <img src="./images/gallery_photo_2.png" class="gallery__img" alt="Изображение 11">
-                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg" alt="Увеличить фото"></div>
+                <div class="acquaintance__zoom"><img src="./images/acquaintance-magnifying-glass.svg"
+                                                     alt="Увеличить фото"></div>
             </div>
         </div>
         <div class="acquaintance__footer">Мы стараемся постоянно пополнять его :)</div>
@@ -717,5 +774,6 @@
         </div>
     </div>
 </footer>
+<a href="#" class="scroll_top" title="Наверх"></a>
 </body>
 </html>

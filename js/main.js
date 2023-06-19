@@ -1,8 +1,16 @@
 $(document).ready(function () {
 
-    //Слайдер "До" и "После"
+    $(window).on('load', function () {
 
-    (function($) {
+        //Прелоадер
+
+        var $preloader = $('#preloader'),
+            $icon_animate = $preloader.find('.loader');
+        $icon_animate.fadeOut();
+        $preloader.delay(300).fadeOut('slow');
+
+        //Слайдер "До" и "После"
+
         var $dragMeFirst = $("#drag-first"),
             $containerFirst = $("#before_and_after-pictures__first"),
             $viewAfterFirst = $("#view-after-first"),
@@ -11,34 +19,35 @@ $(document).ready(function () {
             $viewAfterSecond = $("#view-after-second");
         $dragMeFirst.draggable({
             containment: "parent",
-            drag: function() {
+            drag: function () {
                 $viewAfterFirst.css({
-                    width : parseFloat($(this).css('left'))
+                    width: parseFloat($(this).css('left'))
                 });
             }
         });
         $dragMeSecond.draggable({
             containment: "parent",
-            drag: function() {
+            drag: function () {
                 $viewAfterSecond.css({
-                    width : parseFloat($(this).css('left'))
+                    width: parseFloat($(this).css('left'))
                 });
             }
         });
-        $containerFirst.on("click", function(event) {
+        $containerFirst.on("click", function (event) {
             var eventLeft = event.pageX - $containerFirst.offset().left - 15;
             animateTo(eventLeft, $dragMeFirst, $viewAfterFirst);
         });
-        $containerSecond.on("click", function(event) {
+        $containerSecond.on("click", function (event) {
             var eventLeft = event.pageX - $containerSecond.offset().left - 15;
             animateTo(eventLeft, $dragMeSecond, $viewAfterSecond);
         });
-        $( window ).on( "resize", function() {
+        $(window).on("resize", function () {
             animateTo("50%", $dragMeFirst, $viewAfterFirst);
             animateTo("50%", $dragMeSecond, $viewAfterSecond);
-        } );
+        });
         animateTo("50%", $dragMeFirst, $viewAfterFirst);
         animateTo("50%", $dragMeSecond, $viewAfterSecond);
+
         function animateTo(_left, dragMe, viewAfter) {
             dragMe.animate({
                 left: _left
@@ -53,8 +62,8 @@ $(document).ready(function () {
         ymaps.ready(init);
         var myMap;
 
-        function init(){
-            myMap = new ymaps.Map ("contacts__map", {
+        function init() {
+            myMap = new ymaps.Map("contacts__map", {
                 center: [55.687441, 37.288007],
                 zoom: 15
             });
@@ -66,7 +75,7 @@ $(document).ready(function () {
             myMap.geoObjects.add(myPlacemark);
         }
 
-        // Галерея изображений
+        // Галереи изображений
 
         const swiperWorkFirst = new Swiper('.work_gallery__first', {
             slidesPerView: 1,
@@ -137,11 +146,39 @@ $(document).ready(function () {
             }
         });
 
+        //Аккордеон
+
         $('.accordion-item').accordion({
             collapsible: true,
             active: false,
             heightStyle: 'content',
             header: '.accordion-header'
         });
-    })(jQuery);
+
+        //Кнопка "Наверх"
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scroll_top').css({
+                    transform: 'scale(1)'
+                });
+            } else {
+                $('.scroll_top').css({
+                    transform: 'scale(0)'
+                });
+            }
+        });
+        $('.scroll_top').on('click', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+
+        //Валидация полей "Телефон"
+
+        $('.phone_input').mask('+7 (999) 999-99-99');
+
+        Fancybox.bind('[data-fancybox="gallery"]', {});
+    });
 });
