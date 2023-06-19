@@ -8,14 +8,14 @@
     display: grid;
     grid-template-columns: 15vw 30vw 14vw 30vw 10vw;
     grid-template-rows: 7vw 11vw 20vw 5vw;
-    background: url("/images/free-bg.png") no-repeat center;
+    background: url("../images/free-bg.png") no-repeat center;
     background-size: 100% 100%;
 }
 
 .thermal_survey__container::before {
     content: '';
     position: absolute;
-    background: url("/images/thermal_imager.png") no-repeat center;
+    background: url("../images/thermal_imager.png") no-repeat center;
     background-size: 35%;
     width: 100%;
     height: 100%;
@@ -26,7 +26,7 @@
 .thermal_survey__container::after {
     content: '';
     position: absolute;
-    background: url("/images/contacts-right-bg.png") no-repeat top right;
+    background: url("../images/contacts-right-bg.png") no-repeat top right;
     background-size: 23%;
     width: 100%;
     height: 100%;
@@ -145,7 +145,7 @@
 @media screen and (max-width: 481px) {
     .thermal_survey {
         width: 100%;
-        background: url("/images/free-bg.png") no-repeat center;
+        background: url("../images/free-bg.png") no-repeat center;
         background-size: 370% 100%;
         margin-top: 15vw;
     }

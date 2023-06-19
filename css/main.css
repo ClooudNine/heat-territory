@@ -26,7 +26,7 @@
 .main__content::before {
     content: '';
     position: absolute;
-    background: url("/images/main-left-bg.png") no-repeat left bottom;
+    background: url("../images/main-left-bg.png") no-repeat left bottom;
     background-size: 50% auto;
     bottom: -5%;
     left: -10%;
@@ -181,14 +181,14 @@
     }
 
     .main__content::before {
-        background: url("/images/main-left-bg.png") no-repeat center bottom;
+        background: url("../images/main-left-bg.png") no-repeat center bottom;
         background-size: 200% auto;
         bottom: -20%;
         left: 0;
     }
 
     .main__content::after {
-        background: url("/images/mobile_main_bg.jpg") no-repeat top center;
+        background: url("../images/mobile_main_bg.jpg") no-repeat top center;
         top: 10%;
         right: -30%;
         width: 160%;

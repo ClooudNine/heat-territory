@@ -14,7 +14,7 @@
 .work_gallery__top-cloud {
     grid-row: 1/-1;
     grid-column: 1/-1;
-    background: url("/images/space_insulation_left_cloud_bg.png") no-repeat center top;
+    background: url("../images/space_insulation_left_cloud_bg.png") no-repeat center top;
     background-size: 70%;
     transform: scale(-1, 1);
     margin-top: -8vw;
@@ -25,7 +25,7 @@
 .work_gallery__background {
     grid-row: 1/-1;
     grid-column: 1/-1;
-    background: url("/images/work-gallery-bg.png") no-repeat center bottom;
+    background: url("../images/work-gallery-bg.png") no-repeat center bottom;
     background-size: 60%;
     filter: blur(3px);
     margin-bottom: -5.5vw;
@@ -35,7 +35,7 @@
     z-index: 1;
     content: '';
     position: absolute;
-    background: url("/images/rigid_ppu_right_clouds.png") no-repeat center left;
+    background: url("../images/rigid_ppu_right_clouds.png") no-repeat center left;
     background-size: 70%;
     left: -15%;
     width: 100%;
@@ -45,7 +45,7 @@
 .work_gallery__container::after {
     content: '';
     position: absolute;
-    background: url("/images/rigid_ppu_right_clouds.png") no-repeat center right;
+    background: url("../images/rigid_ppu_right_clouds.png") no-repeat center right;
     background-size: 60%;
     right: -30%;
     bottom: 10%;

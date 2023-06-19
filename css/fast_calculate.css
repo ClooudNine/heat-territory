@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("/images/fast_calculate_bg.png") no-repeat center bottom, #FFFFFF;
+    background: url("../images/fast_calculate_bg.png") no-repeat center bottom, #FFFFFF;
     background-size: 100%;
     border: 1px solid rgba(204, 230, 252, 0.5);
     box-shadow: 0 4px 4px rgba(97, 180, 255, 0.2);

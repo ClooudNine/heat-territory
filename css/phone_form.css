@@ -20,7 +20,7 @@
 
 .phone_form__container::before {
     content: '';
-    background: url("/images/phone_form_leafs.png") no-repeat center left;
+    background: url("../images/phone_form_leafs.png") no-repeat center left;
     background-size: 7% auto;
     position: absolute;
     width: 100%;

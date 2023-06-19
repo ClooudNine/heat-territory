@@ -15,7 +15,7 @@
     position: absolute;
     width: 40%;
     height: 185%;
-    background: url("/images/contacts-left-bg.png") no-repeat top left;
+    background: url("../images/contacts-left-bg.png") no-repeat top left;
     background-size: 100%;
     bottom: 67%;
 }

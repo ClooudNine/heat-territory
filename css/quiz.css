@@ -6,14 +6,14 @@
     display: grid;
     grid-template-columns: 17vw 40vw 30vw 15vw;
     grid-template-rows: 7vw 7vw 5vw 5vw 5vw 15vw;
-    background: url("/images/quiz-bg.png") no-repeat bottom right;
+    background: url("../images/quiz-bg.png") no-repeat bottom right;
     background-size: 100% auto;
     gap: 1vw 0;
 }
 
 .quiz__container::before {
     content: '';
-    background: url("/images/before_quiz.png") center left no-repeat;
+    background: url("../images/before_quiz.png") center left no-repeat;
     background-size: auto 100%;
     position: absolute;
     width: 100%;
@@ -24,7 +24,7 @@
 .quiz__container::after {
     content: '';
     z-index: -1;
-    background: url("/images/quiz-left-bg.png") center right no-repeat;
+    background: url("../images/quiz-left-bg.png") center right no-repeat;
     background-size: auto 100%;
     position: absolute;
     width: 100%;
@@ -98,7 +98,7 @@
     }
 
     .quiz__container::before {
-        background: url("/images/quiz-mobile-top.png") top left no-repeat;
+        background: url("../images/quiz-mobile-top.png") top left no-repeat;
         background-size: cover;
         height: 115%;
         bottom: 30%;
@@ -106,7 +106,7 @@
     }
 
     .quiz__container::after {
-        background: url("/images/quiz-bg-no-leafs.png") no-repeat bottom right;
+        background: url("../images/quiz-bg-no-leafs.png") no-repeat bottom right;
         background-size: cover;
         width: 150%;
         height: 60%;

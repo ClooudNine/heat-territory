@@ -7,7 +7,7 @@
     display: grid;
     width: 100%;
     height: 50vw;
-    background: url("/images/space_insulation-bg.jpg") left no-repeat;
+    background: url("../images/space_insulation-bg.jpg") left no-repeat;
     background-size: 90% auto;
     grid-template-rows: 35% auto auto 20%;
     grid-template-columns: 15vw 30vw 55vw;
@@ -18,7 +18,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/images/space_insulation_left_cloud_bg.png") no-repeat bottom left;
+    background: url("../images/space_insulation_left_cloud_bg.png") no-repeat bottom left;
     background-size: 40% auto;
     bottom: -23%;
     left: -7%;
@@ -30,7 +30,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/images/space_insulation_right_cloud_bg.png") no-repeat bottom right;
+    background: url("../images/space_insulation_right_cloud_bg.png") no-repeat bottom right;
     background-size: 50% auto;
     right: -14%;
     bottom: -27%;
@@ -97,7 +97,7 @@
 
     .space_insulation__container {
         height: auto;
-        background: url("/images/space_insulation-mobile-bg.jpg") center top no-repeat;
+        background: url("../images/space_insulation-mobile-bg.jpg") center top no-repeat;
         background-size: auto 100%;
         grid-template-rows: 30vw 50vw 50vw auto 30vw;
         grid-template-columns: 100%;
