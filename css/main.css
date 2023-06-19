@@ -15,7 +15,7 @@
 .main__content::after {
     content: '';
     position: absolute;
-    background: url("/images/main_bg.png") no-repeat right;
+    background: url("../images/main_bg.png") no-repeat right;
     background-size: 80% auto;
     right: 0;
     width: 100%;
