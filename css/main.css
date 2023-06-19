@@ -134,11 +134,12 @@
     font-size: 1vw;
 }
 
-.main__inspection > img {
+.main__men-with-thermal-imager {
+    pointer-events: none;
     position: absolute;
-    width: 20%;
-    left: 3%;
-    bottom: -0.08vw;
+    width: 5%;
+    left: 16vw;
+    bottom: 4.5vw;
     z-index: 1;
 }
 
@@ -249,5 +250,11 @@
 
     .main__scroll {
         display: none;
+    }
+
+    .main__men-with-thermal-imager {
+        width: 18%;
+        left: 6vw;
+        bottom: 7.5vw;
     }
 }

@@ -9,7 +9,7 @@
     height: 50vw;
     background: url("../images/space_insulation-bg.jpg") left no-repeat;
     background-size: 90% auto;
-    grid-template-rows: 35% auto auto 20%;
+    grid-template-rows: 35% auto 40% 20%;
     grid-template-columns: 15vw 30vw 55vw;
 }
 
@@ -81,12 +81,13 @@
     text-shadow: 0 0 4px #FFFBEE;
 }
 
-.space_insulation__calculate > img {
-    z-index: 1;
+.space_insulation__calculator {
+    pointer-events: none;
+    z-index: 2;
     position: absolute;
-    height: 170%;
-    bottom: -35%;
-    left: -5%;
+    width: 9%;
+    bottom: -2.5vw;
+    left: 13.5vw;
 }
 
 @media screen and (max-width: 481px) {
@@ -138,6 +139,10 @@
     }
 
     .space_insulation__calculate {
+        display: none;
+    }
+
+    .space_insulation__calculator {
         display: none;
     }
 }

@@ -1,11 +1,11 @@
 .phone_form {
     position: relative;
+    height: max-content;
     background: #FFFFFF;
     width: 100%;
     padding-top: 5vw;
     display: grid;
     grid-template-columns: 20vw auto 22vw;
-    grid-template-rows: 13vw;
 }
 
 .phone_form__container {

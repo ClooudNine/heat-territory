@@ -160,12 +160,13 @@
     box-shadow: 0 4px 37px rgba(52, 123, 188, 0.5);
 }
 
-.rigid_ppu__calculate > img {
-    z-index: 1;
+.rigid_ppu__calculator {
+    z-index: 2;
     pointer-events: none;
     position: absolute;
-    width: 30%;
-    left: 0;
+    width: 5%;
+    left: 55vw;
+    bottom: 0;
 }
 
 @media screen and (max-width: 481px) {
@@ -251,5 +252,11 @@
 
     .rigid_ppu__carousel-prev {
         left: 25%;
+    }
+
+    .rigid_ppu__calculator {
+        width: 22%;
+        left: 10vw;
+        bottom: 150vw;
     }
 }
