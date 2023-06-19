@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat.ttf') format('truetype');
+    src: url('../fonts/Montserrat.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Intro';
-    src: url('/fonts/Intro.woff2') format('woff');
+    src: url('../fonts/Intro.woff2') format('woff');
 }
 
 button {
