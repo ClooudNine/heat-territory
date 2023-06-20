@@ -180,5 +180,12 @@ $(document).ready(function () {
         $('.phone_input').mask('+7 (999) 999-99-99');
 
         Fancybox.bind('[data-fancybox="gallery"]', {});
+
+        $('.menu-burger__header').click(function() {
+            $('.menu-burger__header').toggleClass('open-menu');
+            $('.header__nav').toggleClass('open-menu');
+            $('body').toggleClass('fixed-page');
+            $('html').toggleClass('fixed-page');
+        });
     });
 });

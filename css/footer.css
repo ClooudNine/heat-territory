@@ -36,10 +36,6 @@
     gap: 1vw;
 }
 
-.footer__links > a:hover {
-    text-decoration: underline;
-}
-
 .footer__address {
     grid-column: 3/3;
     place-self: start;
