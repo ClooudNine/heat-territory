@@ -181,8 +181,8 @@ $(document).ready(function () {
 
         Fancybox.bind('[data-fancybox="gallery"]', {});
 
-        $('.menu-burger__header').click(function() {
-            $('.menu-burger__header').toggleClass('open-menu');
+        $('.header__burger').click(function() {
+            $('.header__burger').toggleClass('open-menu');
             $('.header__nav').toggleClass('open-menu');
             $('body').toggleClass('fixed-page');
             $('html').toggleClass('fixed-page');
