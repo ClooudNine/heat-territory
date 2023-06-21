@@ -1,4 +1,4 @@
-.header {
+.header { /* разметка для шапки сайта */
     position: relative;
     z-index: 2;
     display: flex;
@@ -7,7 +7,7 @@
     height: 5.5vw;
 }
 
-.header__logo {
+.header__logo { /* навигация и логотип */
     position: relative;
     width: 60%;
     display: flex;
@@ -26,7 +26,7 @@
     font-size: 0.8vw;
 }
 
-.header__menu {
+.header__menu { /* навигация */
     margin: 0 1.5vw 0 0;
     padding: 0;
     display: flex;
@@ -40,7 +40,7 @@
     font-size: 0.8vw;
 }
 
-.header__contacts {
+.header__contacts { /* контакты в шапке */
     background: #61B4FF;
     gap: 3.5vw;
     width: 40%;
@@ -48,7 +48,7 @@
     display: flex;
 }
 
-.header__telephone {
+.header__telephone { /* телефон */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -75,7 +75,7 @@
     font-size: 0.7vw;
 }
 
-.header__callback {
+.header__callback { /* кнопка "Перезвоните мне" */
     height: 55%;
     width: 18%;
     align-self: center;

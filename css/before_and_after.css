@@ -1,4 +1,4 @@
-.before_and_after {
+.before_and_after { /* стили для раздела "Утепление "До" и "После"" */
     position: relative;
     z-index: 2;
     background: #FFFFFF;
@@ -6,7 +6,7 @@
     padding-top: 5vw;
 }
 
-.before_and_after__container {
+.before_and_after__container { /* разметка для раздела "Утепление "До" и "После"" */
     display: grid;
     grid-template-rows: 3vw 3vw 22vw;
     grid-template-columns: 15vw 70vw 15vw;
@@ -43,7 +43,7 @@
     margin-top: 1vw;
 }
 
-.before_and_after-pictures__item {
+.before_and_after-pictures__item { /* стили для контейнера с изображениями */
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
@@ -75,7 +75,7 @@
     z-index: 200;
 }
 
-.before_and_after-pictures__item .drag {
+.before_and_after-pictures__item .drag { /* стили для слайдера */
     position: relative;
     width: 2px;
     height: 100%;

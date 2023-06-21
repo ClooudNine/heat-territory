@@ -1,10 +1,10 @@
-.rigid_ppu {
+.rigid_ppu { /* стили для раздела "Жёсткий ППУ" */
     position: relative;
     width: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #CDE6FC 100%), #87C6FF;
 }
 
-.rigid_ppu__container {
+.rigid_ppu__container { /* разметка для раздела "Жёсткий ППУ" */
     display: grid;
     grid-template-rows: 9vw 4.5vw 22vw 5vw;
     grid-template-columns: 50vw 35vw auto;
@@ -32,7 +32,7 @@
     right: -10%;
 }
 
-.rigid_ppu__carousel {
+.rigid_ppu__carousel { /* стили для галереи изображений */
     margin-left: -10%;
     padding: 2vw;
     grid-row: 2/-1;
@@ -58,7 +58,7 @@
     object-fit: cover;
 }
 
-.rigid_ppu__carousel-pagination  {
+.rigid_ppu__carousel-pagination  { /* стили для пагинации галереи */
     left: 25% !important;
     top: 75% !important;
 }
@@ -78,7 +78,7 @@
     content: none;
 }
 
-.rigid_ppu__carousel-next, .rigid_ppu__carousel-prev {
+.rigid_ppu__carousel-next, .rigid_ppu__carousel-prev { /* стили для кнопок перелистывания */
     width: 2.5vw;
     height: 2.5vw;
     top: 87%;

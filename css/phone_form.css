@@ -1,4 +1,4 @@
-.phone_form {
+.phone_form { /* стили для пользовательской формы получения консультации */
     position: relative;
     background: #FFFFFF;
     width: 100%;
@@ -7,7 +7,7 @@
     grid-template-columns: 20vw auto 22vw;
 }
 
-.phone_form__container {
+.phone_form__container { /* разметка для пользовательской формы получения консультации */
     grid-column: 2/2;
     background: #61B4FF;
     border: 1px solid #C4E3FF;
@@ -69,7 +69,7 @@
     width: 50%;
 }
 
-.phone_form__main {
+.phone_form__main { /* стили формы */
     z-index: 1;
     grid-column: 3/3;
     display: flex;
@@ -86,7 +86,7 @@
     color: #FFFFFF;
 }
 
-.phone_form__main > input {
+.phone_form__main > input { /* стили для поля ввода */
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     background: #FFFFFF;

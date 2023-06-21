@@ -1,4 +1,4 @@
-.fast_calculate {
+.fast_calculate { /* стили для раздела с кнопкой "Получить быстрый расчёт" */
     position: relative;
     z-index: 1;
     width: 100%;
@@ -6,13 +6,13 @@
     background: #FFFFFF;
 }
 
-.fast_calculate__container {
+.fast_calculate__container { /* разметка для блока с кнопкой "Получить быстрый расчёт" */
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 15vw 70vw 15vw;
 }
 
-.fast_calculate__content {
+.fast_calculate__content { /* стили для блока с кнопкой "Получить быстрый расчёт" */
     position: relative;
     margin-top: 8vw;
     grid-row: 1/1;

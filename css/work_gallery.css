@@ -1,9 +1,9 @@
-.work_gallery {
+.work_gallery { /* стили для раздела "Некоторые наши работы" */
     position: relative;
     margin-top: 7vw;
 }
 
-.work_gallery__container {
+.work_gallery__container { /* разметка для раздела "Некоторые наши работы" */
     position: relative;
     display: grid;
     grid-template-rows: 3vw 20vw 20vw;
@@ -95,7 +95,7 @@
     width: 70%;
 }
 
-.work_gallery__slide {
+.work_gallery__slide { /* стили для элемента галереи */
     box-sizing: border-box;
     padding: 0.3vw;
     background: #FFFFFF;
@@ -112,7 +112,7 @@
     height: 100%;
 }
 
-.work_gallery__pagination .swiper-pagination-bullet {
+.work_gallery__pagination .swiper-pagination-bullet { /* стили для кнопок пагинации галереи */
     width: 0.5vw !important;
     height: 0.5vw !important;
     background-color: #FFFFFF !important;

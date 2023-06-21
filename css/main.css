@@ -1,9 +1,9 @@
-.main {
+.main { /* стили для раздела "Утепляем напыляемым ППУ" */
     margin-top: -35px;
     background: linear-gradient(to bottom, #7dc1ff, #CCE6FC);
 }
 
-.main__content {
+.main__content { /* разметка сетки раздела "Утепляем напыляемым ППУ" */
     position: relative;
     z-index: 1;
     display: grid;
@@ -12,7 +12,7 @@
     grid-template-rows: 80px auto 10vw 8vw 9vw;
 }
 
-.main__content::after {
+.main__content::after { /* фоновое изображение раздела */
     content: '';
     position: absolute;
     background: url("../images/main_bg.png") no-repeat right;
@@ -23,7 +23,7 @@
     z-index: -1;
 }
 
-.main__content::before {
+.main__content::before { /* фоновые облака */
     content: '';
     position: absolute;
     background: url("../images/main-left-bg.png") no-repeat left bottom;
@@ -36,7 +36,7 @@
     opacity: 0.5;
 }
 
-.main__caption {
+.main__caption { /* заголовок" */
     grid-row: 2/2;
     grid-column: 2/2;
     place-self: center left;
@@ -59,7 +59,7 @@
     bottom: 0.5vw;
 }
 
-.main__features {
+.main__features { /* особенности обслуживания */
     margin-top: 1.5vw;
     grid-column: 2/2;
     grid-row: 3/3;
@@ -101,7 +101,7 @@
     margin-left: 30%;
 }
 
-.main__description {
+.main__description { /* описание */
     font-family: 'Montserrat', sans-serif;
     grid-row: 4/4;
     grid-column: 2/2;

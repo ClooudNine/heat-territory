@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(window).on('load', function () {
 
-        //Прелоадер
+        //Загрузочный экран
 
         var $preloader = $('#preloader'),
             $icon_animate = $preloader.find('.loader');
@@ -179,7 +179,11 @@ $(document).ready(function () {
 
         $('.phone_input').mask('+7 (999) 999-99-99');
 
+        //Галерея раздела "Давайте познакомимся"
+
         Fancybox.bind('[data-fancybox="gallery"]', {});
+
+        //Меню "Гамбургер"
 
         $('.header__burger').click(function() {
             $('.header__burger').toggleClass('open-menu');

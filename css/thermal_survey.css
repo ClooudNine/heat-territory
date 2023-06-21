@@ -1,9 +1,9 @@
-.thermal_survey {
+.thermal_survey { /* стили для раздела "Теплотехническое обследование" */
     position: relative;
     margin-top: 5vw;
 }
 
-.thermal_survey__container {
+.thermal_survey__container { /* разметка для раздела "Теплотехническое обследование" */
     width: 100%;
     display: grid;
     grid-template-columns: 15vw 30vw 14vw 30vw 10vw;
@@ -70,7 +70,7 @@
     margin-bottom: 5vw;
 }
 
-.thermal_survey__form {
+.thermal_survey__form { /* стили для пользовательской формы получения теплотехнического обследования */
     z-index: 1;
     margin-top: 2vw;
     height: 85%;

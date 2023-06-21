@@ -1,10 +1,10 @@
-.acquaintance {
+.acquaintance { /* стили для раздела "Давайте познакомимся" */
     position: relative;
     background: linear-gradient(0deg, #FFFFFF 0.35%, rgba(255, 255, 255, 0) 100%), #CCE6FC;
     margin-top: 5vw;
 }
 
-.acquaintance__container {
+.acquaintance__container { /* разметка для раздела "Давайте познакомимся" */
     width: 100%;
     display: grid;
     grid-template-rows: 3vw 7vw 35vw 12vw;
@@ -63,7 +63,7 @@
     font-size: 1.4vw;
 }
 
-.acquaintance__gallery {
+.acquaintance__gallery { /* стили для галереи изображений */
     z-index: 1;
     margin-top: 2vw;
     grid-column: 2/2;
@@ -79,7 +79,7 @@
     transition: 0.3s all;
 }
 
-.acquaintance__zoom {
+.acquaintance__zoom { /* стили для блока при наведении на галерею */
     display: flex;
     justify-content: center;
     align-items: center;

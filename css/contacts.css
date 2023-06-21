@@ -1,9 +1,9 @@
-.contacts {
+.contacts { /* стили для раздела "Контакты" */
     position: relative;
     margin-top: 8vw;
 }
 
-.contacts__container {
+.contacts__container { /* разметка для раздела "Контакты" */
     width: 100%;
     display: grid;
     grid-template-rows: 30vw;
@@ -70,7 +70,7 @@
     font-size: 1vw;
 }
 
-#contacts__map {
+#contacts__map { /* стили для блока с Яндекс картами */
     z-index: 1;
     filter: drop-shadow(0px 4px 4px rgba(97, 180, 255, 0.2));
     border-radius: 10px;

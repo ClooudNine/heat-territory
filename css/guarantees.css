@@ -1,4 +1,4 @@
-.guarantees {
+.guarantees { /* стили для раздела гарантий компании */
     position: relative;
     z-index: 1;
     width: 81%;
@@ -11,14 +11,14 @@
     align-items: center;
 }
 
-.guarantees__container {
+.guarantees__container { /* разметка для раздела гарантий компании */
     width: 75%;
     height: 85%;
     display: flex;
     gap: 5%;
 }
 
-.guarantees__item {
+.guarantees__item { /* стили для блока элемента раздела гарантий компании */
     display: grid;
     grid-template-rows: 40% 15% 45%;
     gap: 2vw;

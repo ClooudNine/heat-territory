@@ -1,9 +1,9 @@
-.faq {
+.faq { /* стили для раздела "Часто задаваемые вопросы" */
     background: linear-gradient(360deg, #CCE6FC 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
     padding-top: 7vw;
 }
 
-.faq__container {
+.faq__container { /* разметка для раздела "Часто задаваемые вопросы" */
     width: 100%;
     display: grid;
     grid-template-rows: 5vw auto;
@@ -40,7 +40,7 @@
     grid-column: 3/3;
 }
 
-.accordion-header {
+.accordion-header { /* стили для шапки элемента аккордеона */
     padding: 1.2vw 1vw;
     cursor: pointer;
     display: flex;
@@ -55,7 +55,7 @@
     font-size: 0.8vw;
 }
 
-.accordion-header__button {
+.accordion-header__button { /* стили для кнопки скрытия или раскрытия аккордеона */
     height: 2.5vw;
     width: 2.5vw;
     margin-left: auto;

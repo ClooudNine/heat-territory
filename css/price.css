@@ -1,8 +1,8 @@
-.price {
+.price { /* стили раздела "Цены на работы" */
     margin-top: 9vw;
 }
 
-.price__container {
+.price__container { /* разметка раздела "Цены на работы" */
     width: 100%;
     display: grid;
     grid-template-columns: 15vw 70vw auto;
@@ -10,7 +10,7 @@
     gap: 1vw;
 }
 
-.price__caption {
+.price__caption { /* заголовок раздела "Цены на работы" */
     grid-row: 1/1;
     grid-column: 2/2;
     display: flex;
@@ -42,7 +42,7 @@
     gap: 2vw;
 }
 
-.price__item {
+.price__item { /* элемент раздела "Цены на работы" */
     display: grid;
     grid-template-rows: 40% 20% auto 20%;
     background: #FFFFFF;
@@ -81,7 +81,7 @@
     padding: 0 5%;
 }
 
-.price-item__details {
+.price-item__details { /* стили кнопки "Подробнее" */
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -101,7 +101,7 @@
     transition: 0.5s all;
 }
 
-.price-item__details:hover {
+.price-item__details:hover { /* стили кнопки "Подробнее" при наведении */
     background: radial-gradient(111.22% 111.22% at 40.47% -0.72%, rgba(255, 255, 255, 0.66) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #007BEC;
     box-shadow: 0 4px 2px #90CAFF;
     border-radius: 10px;

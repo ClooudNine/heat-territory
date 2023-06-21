@@ -1,11 +1,11 @@
-.footer {
+.footer { /* стили для подвала сайта */
     position: relative;
     z-index: 1;
     height: 12vw;
     width: 100%;
 }
 
-.footer__container {
+.footer__container { /* разметка для подвала сайта */
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -73,7 +73,7 @@
     width: 8%;
 }
 
-.footer__line {
+.footer__line { /* стили для линии на границе подвала сайта */
     grid-column: 2/4;
     margin-top: -0.3vw;
     width: 70%;
